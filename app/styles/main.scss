@@ -11,40 +11,65 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
     padding: 0.2em 0;
 }
 
-#header {
-    background: #283339;
+.header-top {
+    background: #283339 url('../images/header-background.png') no-repeat top center;
     color: #fff;
+
+    .main-nav {
+        text-align: right;
+    }
+
+    .header-left-col {
+        .logo {
+        }
+        .header-copy {
+            width: 300px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+
+            .header-body-copy {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .header-right-col {
+    }
 }
 
-#header-left-col {
-    background: #ff0000;
-}
-
-#header-right-col {
-    background: #00ff00;
-}
-
-#footer {
-    background: #283339;
-    color: #fff;
-}
-
-#footer-left-col {
+.header-bottom {
     background: #f25822;
+    color: #fff;
+
+    .header-left-col {
+        .sign-up-copy {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
 }
 
-#footer-right-col {
+.footer {
     background: #283339;
-}
+    color: #fff;
 
-#footer-copy-left-col {
-    background: #ff0000;
-}
+    .footer-left-col {
+        background: #f25822;
+    }
 
-#footer-copy-middle-col {
-    background: #00ff00;
-}
+    .footer-right-col {
+        background: #283339;
+    }
 
-#footer-copy-right-col {
-    background: #0000ff;
+    .footer-copy-left-col {
+        background: #ff0000;
+    }
+
+    .footer-copy-middle-col {
+        background: #00ff00;
+    }
+
+    .footer-copy-right-col {
+        background: #0000ff;
+    }
 }
