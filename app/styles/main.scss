@@ -74,6 +74,10 @@ a:active {
             height: 415px;
             padding-top: 130px;
             text-align: center;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .home-footer-right-col {
@@ -101,14 +105,23 @@ a:active {
     .footer-left-col {
         padding-top: 40px;
         text-align: right;
-        min-height: 220px;
+
+        @media (max-width: 768px) {
+            padding-top: 20px;
+            text-align: left;
+        }
     }
 
     .footer-middle-col {
-        background: #283339 url('../images/footer-divider-line.png') repeat-y;
+        background: url('../images/footer-divider-line.png') repeat-y;
         padding-top: 40px;
         padding-bottom: 40px;
-        min-height: 220px;
+
+        @media (max-width: 768px) {
+            background: none;
+            padding-top: 10px;
+            padding-bottom: 0;
+        }
 
         .footer-text {
             color: #4b8aa6;
@@ -119,6 +132,11 @@ a:active {
         padding-top: 40px;
         text-align: right;
 
+        @media (max-width: 768px) {
+            padding-top: 20px;
+            text-align: left;
+        }
+
         .footer-text-legal {
             color: #000;
         }
@@ -128,4 +146,8 @@ a:active {
 .gutter {
     background: #283339;
     height: 105px;
+
+    @media (max-width: 768px) {
+        height: 40px;
+    }
 }
