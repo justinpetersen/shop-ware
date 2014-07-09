@@ -1,0 +1,49 @@
+/* MAIN CONTENT
+-------------------------------------------------- */
+
+.main-content {
+    height: 600px;
+}
+
+/* HOME PAGE FOOTER
+-------------------------------------------------- */
+
+.home-footer {
+    background: #283339;
+    color: #fff;
+    margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
+
+    .home-footer-container {
+        padding: 0;
+        max-width: 1200px;
+
+        .home-footer-left-col {
+            background: #f25822 url('../images/footer-left-background.jpg') no-repeat;
+            background-size: cover;
+            height: 415px;
+            padding-top: 130px;
+            text-align: center;
+            z-index: 10; /* Workaround for divider line appearing over orange div due to mobile Safari margine fix */
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .home-footer-right-col {
+            background: #283339 url('../images/footer-right-background.jpg') no-repeat;
+            background-size: cover;
+            height: 415px;
+            padding-top: 130px;
+            text-align: center;
+
+            .footer-heading {
+                margin-bottom: 0px;
+            }
+
+            .footer-subheading {
+                margin-top: 0px;
+            }
+        }
+    }
+}
