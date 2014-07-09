@@ -1,0 +1,37 @@
+/* PRICING HEADER
+-------------------------------------------------- */
+
+.pricing-header {
+    background: #d5e9e8;
+    color: #283339;
+    border-top: 2px solid #fff;
+
+        .header-copy {
+            padding-top: 50px;
+        }
+
+        .pricing-header-copy {
+        	padding-top: 50px;
+            padding-bottom: 50px;
+
+	        .price-heading {
+	        	font-size: 64px;
+	        	font-weight: bold;
+	        }
+
+	        .price-heading-small {
+	        	font-size: 24px;
+	        }
+
+	        .price-subheading {
+	        	margin-top: -10px;
+	        }
+        }
+}
+
+/* PRICING MAIN CONTENT
+-------------------------------------------------- */
+
+.pricing-content {
+    height: 600px;
+}
