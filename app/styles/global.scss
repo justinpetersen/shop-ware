@@ -1,6 +1,6 @@
 body {
 	font-face: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 a:link,
@@ -8,6 +8,12 @@ a:visited,
 a:hover,
 a:active {
     color: #4b8aa6;
+}
+
+.ul-unstyled {
+	padding-left: 0;
+	list-style: none;
+	clear: both;
 }
 
 .browsehappy {
