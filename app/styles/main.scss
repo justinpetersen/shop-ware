@@ -4,6 +4,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #4b8aa6;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -12,7 +19,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 }
 
 .header-top {
-    background: #283339 url('../images/header-background.png') no-repeat top center;
+    background: #283339 url('../images/header-background.jpg') no-repeat top center;
     color: #fff;
 
     .main-nav {
@@ -49,27 +56,76 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
     }
 }
 
+.main-content {
+    height: 600px;
+}
+
+.home-footer {
+    background: #283339;
+    color: #fff;
+
+    .home-footer-container {
+        padding: 0;
+        max-width: 1200px;
+
+        .home-footer-left-col {
+            background: #f25822 url('../images/footer-left-background.jpg') no-repeat;
+            background-size: cover;
+            height: 415px;
+            padding-top: 130px;
+            text-align: center;
+        }
+
+        .home-footer-right-col {
+            background: #283339 url('../images/footer-right-background.jpg') no-repeat;
+            background-size: cover;
+            height: 415px;
+            padding-top: 130px;
+            text-align: center;
+
+            .footer-heading {
+                margin-bottom: 0px;
+            }
+
+            .footer-subheading {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
 .footer {
     background: #283339;
     color: #fff;
 
     .footer-left-col {
-        background: #f25822;
+        padding-top: 40px;
+        text-align: right;
+        min-height: 220px;
+    }
+
+    .footer-middle-col {
+        background: #283339 url('../images/footer-divider-line.png') repeat-y;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        min-height: 220px;
+
+        .footer-text {
+            color: #4b8aa6;
+        }
     }
 
     .footer-right-col {
-        background: #283339;
-    }
+        padding-top: 40px;
+        text-align: right;
 
-    .footer-copy-left-col {
-        background: #ff0000;
+        .footer-text-legal {
+            color: #000;
+        }
     }
+}
 
-    .footer-copy-middle-col {
-        background: #00ff00;
-    }
-
-    .footer-copy-right-col {
-        background: #0000ff;
-    }
+.gutter {
+    background: #283339;
+    height: 105px;
 }
