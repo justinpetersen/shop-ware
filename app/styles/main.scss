@@ -18,13 +18,36 @@ a:active {
     padding: 0.2em 0;
 }
 
+/* NAV
+-------------------------------------------------- */
+
+.navbar-default {
+    background: none;
+    border: none;
+
+    .navbar-nav > .active > a:link,
+    .navbar-nav > .active > a:visited,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:active {
+        background: none;
+        color: #fff;
+    }
+
+    .navbar-nav > li > a:link
+    .navbar-nav > li > a:visited,
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:active {
+        color: #b2b2b2;
+    }
+
+    .navbar-nav > li > a:hover {
+        color: #fff;
+    }
+}
+
 .header-top {
     background: #283339 url('../images/header-background.jpg') no-repeat top center;
     color: #fff;
-
-    .main-nav {
-        text-align: right;
-    }
 
     .header-left-col {
         .logo {
@@ -63,6 +86,7 @@ a:active {
 .home-footer {
     background: #283339;
     color: #fff;
+    margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
 
     .home-footer-container {
         padding: 0;
@@ -74,6 +98,7 @@ a:active {
             height: 415px;
             padding-top: 130px;
             text-align: center;
+            z-index: 10; /* Workaround for divider line appearing over orange div due to mobile Safari margine fix */
 
             @media (max-width: 768px) {
                 display: none;
@@ -101,6 +126,7 @@ a:active {
 .footer {
     background: #283339;
     color: #fff;
+    margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
 
     .footer-left-col {
         padding-top: 40px;
