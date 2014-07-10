@@ -8,15 +8,34 @@
 
         p {
             font-size: 14px;
+
+            @media (max-width: 1200px) {
+                font-size: 13px;
+            }
         }
 
         .home-tab-copy {
             float: right;
-            padding-right: 20px;
             padding-top: 30px;
-            width: 170px;
+            padding-right: 20px;
+
+            @media (max-width: 1200px) {
+                padding-right: 10px;
+            }
+
+            .tab-number-circle {
+                float: left;
+            }
 
             .home-tab-heading {
+                float: left;
+                width: 180px;
+                padding-left: 10px;
+
+                @media (max-width: 1200px) {
+                    width: 160px;
+                }
+
                 .home-tab-icon {
                     float: right;
                 }

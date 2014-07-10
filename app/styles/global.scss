@@ -43,6 +43,21 @@ h6 {
 	-webkit-font-smoothing: antialiased;
 }
 
+.number-circle {
+    border-radius: 50%;
+
+    width: 27px;
+    height: 27px;
+    padding: 8px;
+
+    background: #273339;
+    color: #eaeaea;
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 13px;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
