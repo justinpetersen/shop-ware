@@ -54,12 +54,19 @@
     color: #fff;
     padding-bottom: 40px;
 
+    .logo {
+        width: 100%;
+        max-width: 302px;
+        height: auto;
+    }
+
     .header-copy {
         padding-top: 55px;
     }
 
     .header-body-copy {
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
     }
 
     .header-heading {

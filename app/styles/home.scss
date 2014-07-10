@@ -1,45 +1,64 @@
 /* HOME PAGE MAIN CONTENT
 -------------------------------------------------- */
 
-.home-main-content {
-    .home-tab {
-        background: #eaeaea;
-        height: 140px;
+.home-main {
+    background: #eaeaea;
+    padding: 0;
 
-        p {
-            font-size: 14px;
+    .home-main-container {
+        padding: 0;
+        max-width: 1200px;
 
-            @media (max-width: 1200px) {
-                font-size: 13px;
+        .home-tab-col {
+            @media (min-width: 768px) {
+                padding: 0;
+            }
+
+            .home-tab {
+                background: #eaeaea url('../images/tab-gradient.png') no-repeat right bottom;
+                height: 140px;
+
+                p {
+                    font-size: 14px;
+
+                    @media (max-width: 1200px) {
+                        font-size: 13px;
+                    }
+                }
+
+                .home-tab-copy {
+                    float: right;
+                    padding-top: 30px;
+                    padding-right: 20px;
+
+                    @media (max-width: 1200px) {
+                        padding-right: 10px;
+                    }
+
+                    .tab-number-circle {
+                        float: left;
+                    }
+
+                    .home-tab-heading {
+                        float: left;
+                        width: 180px;
+                        padding-left: 10px;
+
+                        @media (max-width: 1200px) {
+                            width: 160px;
+                        }
+
+                        .home-tab-icon {
+                            float: right;
+                        }
+                    }
+                }
             }
         }
 
-        .home-tab-copy {
-            float: right;
-            padding-top: 30px;
-            padding-right: 20px;
-
-            @media (max-width: 1200px) {
-                padding-right: 10px;
-            }
-
-            .tab-number-circle {
-                float: left;
-            }
-
-            .home-tab-heading {
-                float: left;
-                width: 180px;
-                padding-left: 10px;
-
-                @media (max-width: 1200px) {
-                    width: 160px;
-                }
-
-                .home-tab-icon {
-                    float: right;
-                }
-            }
+        .home-main-content {
+            background: #fff;
+            height: 560px;
         }
     }
 }
