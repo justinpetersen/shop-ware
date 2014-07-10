@@ -1,8 +1,28 @@
-/* MAIN CONTENT
+/* HOME PAGE MAIN CONTENT
 -------------------------------------------------- */
 
-.main-content {
-    height: 600px;
+.home-main-content {
+    .home-tab {
+        background: #eaeaea;
+        height: 140px;
+
+        p {
+            font-size: 14px;
+        }
+
+        .home-tab-copy {
+            float: right;
+            padding-right: 20px;
+            padding-top: 30px;
+            width: 170px;
+
+            .home-tab-heading {
+                .home-tab-icon {
+                    float: right;
+                }
+            }
+        }
+    }
 }
 
 /* HOME PAGE FOOTER
