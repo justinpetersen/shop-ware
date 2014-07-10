@@ -82,6 +82,7 @@
     background: #f25822;
     color: #fff;
     padding-bottom: 40px;
+    z-index: 100;
 
     .sign-up-copy {
         padding-top: 33px;
@@ -96,4 +97,12 @@
     .header-copy {
         padding-top: 40px;
     }
+}
+
+.header-fixed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
