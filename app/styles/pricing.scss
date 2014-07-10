@@ -5,14 +5,14 @@
     background: #d5e9e8;
     color: #283339;
     border-top: 2px solid #fff;
+    padding-bottom: 57px;
 
     .header-copy {
-        padding-top: 50px;
+        padding-top: 75px;
     }
 
     .pricing-header-copy {
-    	padding-top: 50px;
-        padding-bottom: 50px;
+    	padding-top: 53px;
 
         .price-heading {
         	font-size: 64px;
@@ -38,7 +38,7 @@
 }
 
 .pricing-content-top {
-	padding-top: 50px;
+	padding-top: 40px;
 
 	.arrow-bullet {
 		float: left;
@@ -46,17 +46,23 @@
 	}
 
 	.ul-unlimited {
+		width: 380px;
+		padding-top: 40px;
+
 		li {
 			float: left;
 			width: 50%;
+			padding-top: 15px;
 		}
 	}
 
 	.ul-features {
 		width: 525px;
+		padding-top: 40px;
 
 		li {
 			float: left;
+			width: 100%;
 			padding-top: 15px;
 			padding-bottom: 15px;
 			border-bottom: 2px solid #d5e9e8;
@@ -82,6 +88,7 @@
 
 		li {
 			float: left;
+			width: 100%;
 			padding-top: 15px;
 		}
 	}

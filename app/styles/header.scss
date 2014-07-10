@@ -4,6 +4,13 @@
 .navbar-default {
     background: none;
     border: none;
+    margin-bottom: 0;
+
+    .navbar-nav {
+        li {
+            font-size: 12px;
+        }
+    }
 
     .navbar-nav > .active > a:link,
     .navbar-nav > .active > a:visited,
@@ -45,43 +52,36 @@
 .header-top {
     background: #283339 url('../images/header-background.jpg') no-repeat top center;
     color: #fff;
+    padding-bottom: 40px;
 
-    .header-left-col {
-        .logo { }
-
-        .header-copy {
-            padding-top: 10px;
-            padding-bottom: 30px;
-
-            .header-body-copy {
-                margin-right: 20px;
-            }
-
-            .header-heading {
-                margin-bottom: 0px;
-            }
-
-            .header-subheading {
-                margin-top: 0px;
-            }
-        }
+    .header-body-copy {
+        margin-right: 20px;
     }
 
-    .header-right-col { }
+    .header-heading {
+        margin-top: 33px;
+    }
+
+    .header-subheading {
+        margin-top: 2px;
+    }
 }
 
 .header-bottom {
     background: #f25822;
     color: #fff;
+    padding-bottom: 40px;
 
-    .header-left-col {
-        .sign-up-copy {
-            padding-top: 30px;
-            padding-bottom: 30px;
+    .sign-up-copy {
+        padding-top: 33px;
 
-            .input-email {
-                width: 300px;
-            }
+        .sign-up-button {
+            width: 345px;
+            height: 40px;
         }
+    }
+
+    .header-copy {
+        padding-top: 40px;
     }
 }
