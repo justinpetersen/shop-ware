@@ -54,16 +54,20 @@
     color: #fff;
     padding-bottom: 40px;
 
+    .header-copy {
+        padding-top: 55px;
+    }
+
     .header-body-copy {
-        margin-right: 20px;
+        width: 320px;
     }
 
     .header-heading {
-        margin-top: 33px;
+        padding-top: 33px;
     }
 
     .header-subheading {
-        margin-top: 2px;
+        padding-top: 2px;
     }
 }
 
@@ -76,7 +80,8 @@
         padding-top: 33px;
 
         .sign-up-button {
-            width: 345px;
+            width: 100%;
+            max-width: 345px;
             height: 40px;
         }
     }

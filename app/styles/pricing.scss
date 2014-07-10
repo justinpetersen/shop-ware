@@ -33,31 +33,37 @@
 	text-align: center;
 
 	.pricing-intro-heading {
-		padding-top: 20px;
+		padding-top: 42px;
+	}
+
+	.pricing-intro-subheading {
+		padding-top: 13px;
 	}
 }
 
 .pricing-content-top {
-	padding-top: 40px;
-
-	.arrow-bullet {
-		float: left;
-		padding-right: 10px;
-	}
+	padding-top: 58px;
 
 	.ul-unlimited {
-		width: 380px;
-		padding-top: 40px;
+		width: 100%;
+		max-width: 360px;
+		padding-top: 35px;
 
 		li {
 			float: left;
 			width: 50%;
 			padding-top: 15px;
+
+			.check-bullet {
+				vertical-align: top;
+				padding-right: 10px;
+			}
 		}
 	}
 
 	.ul-features {
-		width: 525px;
+		width: 100%;
+		max-width: 525px;
 		padding-top: 40px;
 
 		li {
@@ -66,6 +72,10 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 			border-bottom: 2px solid #d5e9e8;
+
+			.feature-bullet {
+				padding-right: 20px;
+			}
 		}
 
 		.li-no-border {
@@ -75,26 +85,31 @@
 }
 
 .pricing-content-bottom {
-	padding-top: 50px;
+	padding-top: 85px;
 	padding-bottom: 100px;
 
-	.arrow-bullet {
-		float: left;
-		padding-right: 10px;
-	}
-
 	.ul-cloud {
-		padding-top: 20px;
+		padding-top: 40px;
 
 		li {
 			float: left;
 			width: 100%;
 			padding-top: 15px;
+
+			.arrow-bullet {
+				vertical-align: top;
+				padding-right: 10px;
+			}
 		}
 	}
 
 	.cloud-screens {
-		padding-top: 20px;
+		padding-top: 18px;
+
+        @media (max-width: 410px) {
+        	width: 100%;
+        	height: auto;
+        }
 	}
 }
 

@@ -3,6 +3,14 @@
     color: #fff;
     margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
 
+    p {
+        font-size: 12px;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
     .footer-left-col {
         padding-top: 40px;
         text-align: right;
