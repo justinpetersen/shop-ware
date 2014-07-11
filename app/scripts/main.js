@@ -23,14 +23,23 @@ $(document).ready(function() {
 				$(this).removeClass('active');
 			}
 		});
+		$('.home-tab-slide').each(function(index) {
+			if (index === activeIndex) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
 	};
 
 
-	var ScrollWatcher = function() { };
+	var ScrollWatcher = function() {
+		this.headerOffset = -1;
+	};
 
 	ScrollWatcher.prototype.onScroll = function() {
 		var offset = $('.header-bottom').offset().top;
-		if (this.headerOffset === undefined) {
+		if (this.headerOffset === -1) {
 			this.headerOffset = offset;
 		}
 		if ($(window).scrollTop() > this.headerOffset) {

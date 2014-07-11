@@ -31,7 +31,7 @@
 
                 .home-tab-copy {
                     float: right;
-                    padding-top: 30px;
+                    padding-top: 32px;
                     padding-right: 20px;
 
                     @media (max-width: 1200px) {
@@ -74,6 +74,59 @@
         .home-main-content {
             background: #fff;
             height: 560px;
+
+            .home-tab-slide {
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.4s;
+
+                .tab-slide-heading {
+                    width: 100%;
+                    max-width: 642px;
+                    padding-top: 70px;
+                    padding-bottom: 10px;
+                    margin-left: 65px;
+                    border-bottom: 1px solid #d5e9e8;
+
+                    .tab-slide-subheading {
+                        padding-top: 5px;
+                    }
+                }
+
+                .tab-slide-image {
+                    float: left;
+                    padding-top: 60px;
+                    padding-left: 65px;
+                }
+
+                .tab-slide-copy {
+                    float: left;
+                    padding-top: 60px;
+                    padding-left: 20px;
+
+                    .ul-how-to {
+                        width: 100%;
+
+                        li {
+                            padding-top: 20px;
+
+                            .arrow-bullet {
+                                clear: both;
+                                float: left;
+                                padding-right: 10px;
+                            }
+
+                            .tab-slide-list-copy {
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .active {
+                opacity: 1;
+            }
         }
     }
 }
