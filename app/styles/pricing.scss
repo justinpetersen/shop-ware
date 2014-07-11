@@ -36,30 +36,30 @@
 	text-align: center;
 
 	.pricing-intro-heading {
-		padding-top: 42px;
+		margin-top: 42px;
 	}
 
 	.pricing-intro-subheading {
-		padding-top: 13px;
+		margin-top: 13px;
 	}
 }
 
 .pricing-content-top {
-	padding-top: 58px;
+	margin-top: 58px;
 
 	.ul-unlimited {
 		width: 100%;
 		max-width: 360px;
-		padding-top: 35px;
+		margin-top: 35px;
 
 		li {
 			float: left;
 			width: 50%;
-			padding-top: 15px;
+			margin-top: 15px;
 
 			.check-bullet {
 				vertical-align: top;
-				padding-right: 10px;
+				margin-right: 10px;
 			}
 		}
 	}
@@ -67,7 +67,7 @@
 	.ul-features {
 		width: 100%;
 		max-width: 525px;
-		padding-top: 40px;
+		margin-top: 40px;
 
 		li {
 			float: left;
@@ -77,7 +77,7 @@
 			border-bottom: 2px solid #d5e9e8;
 
 			.feature-bullet {
-				padding-right: 20px;
+				margin-right: 20px;
 			}
 		}
 
@@ -88,26 +88,26 @@
 }
 
 .pricing-content-bottom {
-	padding-top: 85px;
-	padding-bottom: 100px;
+	margin-top: 85px;
+	margin-bottom: 100px;
 
 	.ul-cloud {
-		padding-top: 40px;
+		margin-top: 40px;
 
 		li {
 			float: left;
 			width: 100%;
-			padding-top: 15px;
+			margin-top: 15px;
 
 			.arrow-bullet {
 				vertical-align: top;
-				padding-right: 10px;
+				margin-right: 10px;
 			}
 		}
 	}
 
 	.cloud-screens {
-		padding-top: 18px;
+		margin-top: 18px;
 
         @media (max-width: 410px) {
         	width: 100%;
