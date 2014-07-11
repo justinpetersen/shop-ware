@@ -1,4 +1,4 @@
-/* HOME PAGE MAIN CONTENT
+/* HOME PAGE TAB CONTENT
 -------------------------------------------------- */
 
 .home-main {
@@ -13,67 +13,77 @@
             @media (min-width: 768px) {
                 padding: 0;
             }
+        }
 
-            .home-tab {
-                height: 140px;
-                background: #eaeaea url('../images/tab-gradient.png') no-repeat right bottom;
-                opacity: 0.5;
-                transition: opacity 0.4s;
-                cursor: pointer;
+        .home-tab {
+            height: 140px;
+            background: #eaeaea url('../images/tab-gradient.png') no-repeat right bottom;
+            opacity: 0.5;
+            transition: opacity 0.4s;
+            cursor: pointer;
 
-                p {
-                    font-size: 14px;
+            p {
+                font-size: 14px;
 
-                    @media (max-width: 1200px) {
-                        font-size: 13px;
-                    }
+                @media (max-width: 1200px) {
+                    font-size: 13px;
                 }
+            }
 
-                .home-tab-copy {
+            .home-tab-copy {
+                padding-top: 32px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (min-width: 768px) {
                     float: right;
-                    padding-top: 32px;
-                    padding-right: 20px;
+                }
 
-                    @media (max-width: 1200px) {
-                        padding-right: 10px;
+                @media (max-width: 1200px) {
+                    padding-right: 10px;
+                }
+
+                .tab-number-circle {
+                    float: left;
+                }
+
+                .home-tab-icon {
+                    float: right;
+                }
+
+                .home-tab-heading {
+                    float: left;
+                    padding-left: 10px;
+
+                    @media (min-width: 768px) {
+                        width: 160px;
                     }
 
-                    .tab-number-circle {
-                        float: left;
-                    }
-
-                    .home-tab-heading {
-                        float: left;
+                    @media (min-width: 1200px) {
                         width: 180px;
-                        padding-left: 10px;
+                    }
 
-                        @media (max-width: 1200px) {
-                            width: 160px;
-                        }
-
-                        .home-tab-icon {
-                            float: right;
-                        }
-
-                        .home-tab-subheading {
-                            padding-top: 8px;
-                        }
+                    .home-tab-subheading {
+                        padding-top: 8px;
                     }
                 }
             }
+        }
 
-            .home-tab:hover {
-                opacity: 1;
-            }
+        .home-tab:hover {
+            opacity: 1;
+        }
 
-            .active {
-                opacity: 1;
-            }
+        .active {
+            opacity: 1;
         }
 
         .home-main-content {
             background: #fff;
-            height: 560px;
+
+            @media (min-width: 768px) {
+                height: 560px;
+            }
 
             .home-tab-slide {
                 position: absolute;
@@ -128,6 +138,25 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+/* HOME PAGE MOBILE ACCORDION
+-------------------------------------------------- */
+
+.panel-group {
+    margin-bottom: 0;
+
+    .panel-heading {
+        padding: 0;
+    }
+
+    .panel-body {
+        height: 720px;
+    }
+
+    .panel + .panel {
+        margin-top: 0;
     }
 }
 
