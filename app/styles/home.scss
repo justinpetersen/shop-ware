@@ -93,10 +93,15 @@
                 .tab-slide-heading {
                     width: 100%;
                     max-width: 642px;
-                    padding-top: 70px;
-                    padding-bottom: 10px;
-                    margin-left: 65px;
-                    border-bottom: 1px solid #d5e9e8;
+                    padding-top: 10px;
+                    padding-right: 10px;
+
+                    @media (min-width: 768px) {
+                        padding-top: 70px;
+                        padding-bottom: 10px;
+                        margin-left: 65px;
+                        border-bottom: 1px solid #d5e9e8;
+                    }
 
                     .tab-slide-subheading {
                         padding-top: 5px;
@@ -105,14 +110,27 @@
 
                 .tab-slide-image {
                     float: left;
-                    padding-top: 60px;
-                    padding-left: 65px;
+                    margin-top: 20px;
+                    margin-right: 10px;
+                    width: 100%;
+                    max-width: 379px;
+                    height: auto;
+
+                    @media (min-width: 768px) {
+                        margin-top: 60px;
+                        margin-left: 65px;
+                    }
                 }
 
                 .tab-slide-copy {
                     float: left;
-                    padding-top: 60px;
-                    padding-left: 20px;
+                    width: 100%;
+
+                    @media (min-width: 768px) {
+                        padding-top: 60px;
+                        padding-left: 20px;
+                        width: auto;
+                    }
 
                     .ul-how-to {
                         width: 100%;
@@ -152,7 +170,7 @@
     }
 
     .panel-body {
-        height: 720px;
+        height: 540px;
     }
 
     .panel + .panel {
