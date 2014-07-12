@@ -46,6 +46,16 @@ TabGroup.prototype.initAccordion = function() {
 	$('.home-tab-slide').each(function(index) {
 		that.cloneTabSlide($(this), index);
 	});
+
+	this.initScrollOnCollapse();
+};
+
+TabGroup.prototype.initScrollOnCollapse = function() {
+	$('#accordion').on('shown.bs.collapse', function (e) {
+        $('html,body').animate({
+            scrollTop: $(e.target).offset().top
+        }, 500);
+    });
 };
 
 TabGroup.prototype.cloneTab = function(element, index) {
