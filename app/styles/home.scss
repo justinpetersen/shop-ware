@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 
 .home-main {
-    background: #eaeaea;
+    background: #eaeaea url('../images/grey-white-background.png') repeat-y center top;
     padding: 0;
 
     .home-main-container {
@@ -197,7 +197,7 @@
 -------------------------------------------------- */
 
 .home-footer {
-    background: #283339;
+    background: #283339 url('../images/orange-blue-background.png') repeat-y center top;
     color: #fff;
     margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
 
