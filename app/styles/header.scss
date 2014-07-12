@@ -82,7 +82,6 @@
 .header-bottom {
     background: #f25822;
     color: #fff;
-    padding-bottom: 40px;
     z-index: 100;
 
     .sign-up-copy {
@@ -92,11 +91,12 @@
             width: 100%;
             max-width: 345px;
             height: 40px;
+            margin-bottom: 40px;
         }
     }
 
     .header-copy {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 }
 
@@ -108,6 +108,6 @@
     right: 0;
 
     .logo {
-        padding-top: 20px;
+        margin-top: 20px;
     }
 }
