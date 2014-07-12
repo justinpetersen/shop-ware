@@ -9,6 +9,17 @@
     .navbar-nav {
         li {
             font-size: 12px;
+
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+                color: #b2b2b2;
+            }
+
+            a:hover {
+                color: #fff;
+            }
         }
     }
 
@@ -18,17 +29,6 @@
     .navbar-nav > .active > a:active {
         background: none;
         color: #f25822;
-    }
-
-    .navbar-nav > li > a:link
-    .navbar-nav > li > a:visited,
-    .navbar-nav > li > a:hover,
-    .navbar-nav > li > a:active {
-        color: #b2b2b2;
-    }
-
-    .navbar-nav > li > a:hover {
-        color: #fff;
     }
 
     .navbar-toggle,
@@ -62,12 +62,13 @@
     }
 
     .header-copy {
-        padding-top: 55px;
-    }
+        margin-top: 50px;
 
-    .header-body-copy {
-        width: 100%;
-        max-width: 320px;
+        .header-body-copy {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 320px;
+        }
     }
 
     .header-heading {
@@ -85,18 +86,22 @@
     z-index: 100;
 
     .sign-up-copy {
-        padding-top: 33px;
+        margin-top: 33px;
+        margin-bottom: 33px;
 
         .sign-up-button {
             width: 100%;
             max-width: 345px;
             height: 40px;
-            margin-bottom: 40px;
+        }
+
+        .sign-up-heading {
+            margin-top: 10px;
         }
     }
 
     .header-copy {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 

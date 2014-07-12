@@ -22,14 +22,6 @@
             transition: opacity 0.4s;
             cursor: pointer;
 
-            p {
-                font-size: 13px;
-
-                @media (min-width: 1200px) {
-                    font-size: 14px;
-                }
-            }
-
             .home-tab-copy {
                 padding-top: 32px;
                 padding-left: 20px;
@@ -65,6 +57,13 @@
 
                     .home-tab-subheading {
                         padding-top: 8px;
+                        font-size: 13px;
+                        font-weight: 400;
+                        letter-spacing: 0;
+
+                        @media (min-width: 1200px) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -180,6 +179,10 @@
 .panel-group {
     margin-bottom: 0;
 
+    .panel {
+        border-radius: 0;
+    }
+
     .panel-heading {
         padding: 0;
     }
@@ -224,6 +227,10 @@
             height: 415px;
             padding-top: 130px;
             text-align: center;
+
+            .works-anywhere-heading {
+                margin-top: 25px;
+            }
         }
     }
 }

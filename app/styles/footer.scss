@@ -5,10 +5,24 @@
 
     p {
         font-size: 12px;
+        font-weight: 500;
 
         a {
             text-decoration: underline;
         }
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        color: #4b8aa6;
+        letter-spacing: 0;
+    }
+
+    .footer-text-legal {
+        color: #000;
     }
 
     .footer-left-col {
@@ -31,10 +45,6 @@
             padding-top: 10px;
             padding-bottom: 0;
         }
-
-        .footer-text {
-            color: #4b8aa6;
-        }
     }
 
     .footer-right-col {
@@ -44,10 +54,6 @@
         @media (max-width: 768px) {
             padding-top: 20px;
             text-align: left;
-        }
-
-        .footer-text-legal {
-            color: #000;
         }
     }
 

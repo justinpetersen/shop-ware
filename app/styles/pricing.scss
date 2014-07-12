@@ -5,26 +5,28 @@
     background: #d5e9e8;
     color: #283339;
     border-top: 2px solid #fff;
-    padding-bottom: 57px;
 
     .header-copy {
-        padding-top: 75px;
+    	margin-top: 40px;
     }
 
     .pricing-header-copy {
-    	padding-top: 53px;
+	    margin-top: 40px;
+	    margin-bottom: 40px;
 
         .price-heading {
-        	font-size: 64px;
-        	font-weight: bold;
+        	font-size: 72px;
+        	font-weight: 600;
+        	line-height: 72px;
         }
 
         .price-heading-small {
         	font-size: 24px;
+        	font-weight: 500;
         }
 
         .price-subheading {
-        	margin-top: -10px;
+        	font-weight: 400;
         }
     }
 }
@@ -43,12 +45,13 @@
 		max-width: 440px;
 
 		@media (min-width: 992px) {
-			width: 100%;
+			max-width: 1200px;
 		}
 	}
 
 	.pricing-intro-subheading {
-		margin-top: 13px;
+		margin-top: 10px;
+		font-size: 21px;
 	}
 }
 
@@ -57,6 +60,7 @@
 
 	@media (min-width: 992px) {
 		margin-top: 58px;
+		font-size: 17px;
 	}
 
 	.list-heading {
@@ -136,6 +140,7 @@
 
 	@media (min-width: 992px) {
 		margin-top: 85px;
+		font-size: 17px;
 	}
 
 	.list-heading {
