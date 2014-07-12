@@ -203,13 +203,14 @@
     background: #283339 url('../images/orange-blue-background.png') repeat-y center top;
     color: #fff;
     margin-bottom: -1px; /* Fix for 1-pixel grey border on bottom of div in mobile Safari */
+    padding-bottom: 1px;
 
     .home-footer-container {
         padding: 0;
         max-width: 1200px;
 
         .home-footer-left-col {
-            background: #f25822 url('../images/footer-left-background.jpg') no-repeat;
+            background: #f25822 url('../images/orange-background.jpg') no-repeat;
             background-size: cover;
             height: 415px;
             padding-top: 130px;
@@ -222,7 +223,7 @@
         }
 
         .home-footer-right-col {
-            background: #283339 url('../images/footer-right-background.jpg') no-repeat;
+            background: #283339 url('../images/blue-background.jpg') no-repeat;
             background-size: cover;
             height: 415px;
             padding-top: 130px;

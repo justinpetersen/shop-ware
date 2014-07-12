@@ -10,6 +10,9 @@
         a {
             text-decoration: underline;
         }
+        a:hover {
+            color: #fff;
+        }
     }
 
     .footer-heading {
@@ -26,42 +29,44 @@
     }
 
     .footer-left-col {
-        padding-top: 40px;
-        text-align: right;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 20px;
 
-        @media (max-width: 768px) {
-            padding-top: 20px;
-            text-align: left;
+        @media (min-width: 768px) {
+            width: auto;
+            margin-top: 40px;
         }
     }
 
     .footer-middle-col {
-        background: url('../images/footer-divider-line.png') repeat-y;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        float: left;
+        padding-top: 10px;
 
-        @media (max-width: 768px) {
-            background: none;
-            padding-top: 10px;
-            padding-bottom: 0;
+        @media (min-width: 768px) {
+            background: url('../images/footer-divider-line.png') repeat-y;
+            padding-top: 40px;
+            padding-bottom: 75px;
+            padding-left: 20px;
         }
     }
 
     .footer-right-col {
-        padding-top: 40px;
-        text-align: right;
+        margin-top: 20px;
+        text-align: left;
 
-        @media (max-width: 768px) {
-            padding-top: 20px;
-            text-align: left;
+        @media (min-width: 768px) {
+            margin-top: 40px;
+            text-align: right;
         }
     }
 
     .gutter {
-        height: 105px;
+        height: 20px;
 
-        @media (max-width: 768px) {
-            height: 40px;
+        @media (min-width: 768px) {
+            height: 30px;
         }
     }
 }

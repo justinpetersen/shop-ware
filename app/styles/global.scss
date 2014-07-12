@@ -66,6 +66,17 @@ a:active {
 	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
 
+.btn-primary:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16526e", endColorstr="#2791c2");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#16526e), to(#2791c2));
+	background-image: -moz-linear-gradient(top, #16526e, #2791c2);
+	background-image: -ms-linear-gradient(top, #16526e, #2791c2);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #16526e), color-stop(100%, #2791c2));
+	background-image: -webkit-linear-gradient(top, #16526e, #2791c2);
+	background-image: -o-linear-gradient(top, #16526e, #2791c2);
+	background-image: linear-gradient(#16526e, #2791c2);
+}
+
 .number-circle {
     border-radius: 50%;
 
