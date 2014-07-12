@@ -1,3 +1,55 @@
+/* ABOUT PAGE HEADER
+-------------------------------------------------- */
+
+.about-header {
+    background: #283339;
+    color: #fff;
+
+    .about-header-container {
+        padding: 0;
+        max-width: 1200px;
+
+        .about-header-left-col {
+            background: #f25822 url('../images/about-orange-background.jpg') no-repeat;
+            background-size: cover;
+            height: 415px;
+
+            .header-quote-heading {
+                margin-top: 55px;
+                margin-left: 30px;
+            }
+
+            .header-quote-subheading {
+                margin-top: 30px;
+                margin-left: 30px;
+                margin-right: 40px;
+                font-weight: 200;
+                letter-spacing: 1px;
+        		font-size: 26px;
+        		line-height: 30px;
+
+            	@media (min-width: 992px) and (max-width: 1200px) {
+	                margin-right: 60px;
+	                font-size: 28px;
+	                line-height: 36px;
+            	}
+
+            	@media (min-width: 1200px) {
+	                margin-right: 80px;
+	                font-size: 31px;
+	                line-height: 40px;
+            	}
+            }
+        }
+
+        .about-header-right-col {
+            background: #283339 url('../images/about-image.jpg') no-repeat center top;
+            background-size: cover;
+            height: 415px;
+        }
+    }
+}
+
 /* ABOUT PAGE MAIN CONTENT
 -------------------------------------------------- */
 
