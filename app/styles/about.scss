@@ -54,15 +54,19 @@
 -------------------------------------------------- */
 
 .about-copy {
-	padding-top: 32px;
-	padding-bottom: 170px;
     font-size: 18px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 170px;
+    }
 
 	h2 {
-		padding-top: 30px;
+		margin-top: 30px;
 	}
 
 	p {
-		padding-top: 30px;
+		margin-top: 30px;
 	}
 }

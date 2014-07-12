@@ -87,7 +87,6 @@ ScrollWatcher.prototype.onScroll = function() {
 		$('.header-fixed').show();
 		if (this.fade)
 		{
-			$('.header-rel').find('.sign-up-copy').hide();
 			$('.header-fixed').find('.logo').fadeIn();
 			$('.header-fixed').find('.sign-up-copy').fadeIn();
 			$('.header-fixed').find('.header-copy').fadeIn();
@@ -96,7 +95,6 @@ ScrollWatcher.prototype.onScroll = function() {
 		$('.header-fixed').hide();
 		if (this.fade)
 		{
-			$('.header-rel').find('.sign-up-copy').fadeIn();
 			$('.header-fixed').find('.logo').hide();
 			$('.header-fixed').find('.sign-up-copy').hide();
 			$('.header-fixed').find('.header-copy').hide();

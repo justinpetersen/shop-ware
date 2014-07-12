@@ -62,6 +62,10 @@
 		width: 100%;
 		max-width: 440px;
 
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
+
 		@media (min-width: 992px) {
 			max-width: 1200px;
 		}
@@ -69,7 +73,11 @@
 
 	.pricing-intro-subheading {
 		margin-top: 10px;
-		font-size: 21px;
+		font-size: 16px;
+
+		@media (min-width: 768px) {
+			font-size: 21px;
+		}
 	}
 }
 
