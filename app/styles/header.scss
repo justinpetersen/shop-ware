@@ -55,19 +55,24 @@
     color: #fff;
     padding-bottom: 40px;
 
-    .logo {
-        width: 100%;
-        max-width: 302px;
-        height: auto;
+    .logo-container {
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
     }
 
     .header-copy {
         margin-top: 50px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 350px;
+        }
 
         .header-body-copy {
             margin-top: 10px;
-            width: 100%;
-            max-width: 320px;
         }
     }
 
@@ -88,20 +93,38 @@
     .sign-up-copy {
         margin-top: 33px;
         margin-bottom: 33px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+        .sign-up-heading {
+            margin-top: 10px;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 14px;
+            }
+        }
 
         .sign-up-button {
             width: 100%;
             max-width: 345px;
             height: 40px;
         }
-
-        .sign-up-heading {
-            margin-top: 10px;
-        }
     }
 
     .header-copy {
         margin-top: 30px;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
     }
 }
 

@@ -65,6 +65,7 @@ TabGroup.prototype.cloneTabSlide = function(element, index) {
 
 var ScrollWatcher = function() {
 	this.headerOffset = -1;
+	this.fade = false;
 };
 
 ScrollWatcher.prototype.onScroll = function() {
@@ -76,6 +77,7 @@ ScrollWatcher.prototype.onScroll = function() {
 		$('.header-fixed').show();
 		if (this.fade)
 		{
+			$('.header-rel').find('.sign-up-copy').hide();
 			$('.header-fixed').find('.logo').fadeIn();
 			$('.header-fixed').find('.sign-up-copy').fadeIn();
 			$('.header-fixed').find('.header-copy').fadeIn();
@@ -84,6 +86,7 @@ ScrollWatcher.prototype.onScroll = function() {
 		$('.header-fixed').hide();
 		if (this.fade)
 		{
+			$('.header-rel').find('.sign-up-copy').fadeIn();
 			$('.header-fixed').find('.logo').hide();
 			$('.header-fixed').find('.sign-up-copy').hide();
 			$('.header-fixed').find('.header-copy').hide();
@@ -107,8 +110,9 @@ $(document).ready(function() {
 	tabGroup.init();
 
 	if ($(window).outerWidth() >= 768) {
+		var fade = $('.header-fixed').find('.logo').length > 0;
 		var scrollWatcher = new ScrollWatcher();
-		scrollWatcher.init($('.header-fixed').find('.logo').length > 0);
+		scrollWatcher.init(fade);
 	}
 
 });
