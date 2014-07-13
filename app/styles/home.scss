@@ -16,13 +16,18 @@
         }
 
         .home-tab {
-            height: 140px;
+            height: 110px;
             background: #eaeaea url('../images/tab-gradient.png') no-repeat right bottom;
             opacity: 0.5;
             transition: opacity 0.4s;
             cursor: pointer;
 
+            @media (min-width: 768px) {
+                height: 140px;
+            }
+
             .home-tab-copy {
+                position: relative;
                 padding-top: 32px;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -36,23 +41,22 @@
                 }
 
                 .tab-number-circle {
-                    float: left;
+                    position: absolute;
+                    top: 32px;
+                    left: 20px;
                 }
 
                 .home-tab-icon {
-                    float: right;
+                    position: absolute;
+                    top: 32px;
+                    right: 20px;
                 }
 
                 .home-tab-heading {
-                    float: left;
-                    padding-left: 10px;
+                    padding-left: 40px;
 
                     @media (min-width: 768px) {
-                        width: 160px;
-                    }
-
-                    @media (min-width: 1200px) {
-                        width: 180px;
+                        width: 200px;
                     }
 
                     .home-tab-subheading {
