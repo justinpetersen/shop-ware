@@ -30,14 +30,10 @@
                 position: relative;
                 padding-top: 32px;
                 padding-left: 20px;
-                padding-right: 20px;
+                padding-right: 10px;
 
                 @media (min-width: 768px) {
                     float: right;
-                }
-
-                @media (max-width: 1200px) {
-                    padding-right: 10px;
                 }
 
                 .tab-number-circle {
@@ -56,7 +52,7 @@
                     padding-left: 40px;
 
                     @media (min-width: 768px) {
-                        width: 200px;
+                        width: 210px;
                     }
 
                     .home-tab-subheading {
