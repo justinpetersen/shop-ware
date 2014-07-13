@@ -10,6 +10,10 @@
         li {
             font-size: 12px;
 
+            a {
+                padding-left: 0;
+            }
+
             a:link,
             a:visited,
             a:hover,
@@ -21,20 +25,24 @@
                 color: #fff;
             }
         }
-    }
 
-    .navbar-nav > .active > a:link,
-    .navbar-nav > .active > a:visited,
-    .navbar-nav > .active > a:hover,
-    .navbar-nav > .active > a:active {
-        background: none;
-        color: #f25822;
+        .active {
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+                background: none;
+                color: #f25822;
+            }
+        }
     }
 
     .navbar-toggle,
     .navbar-toggle:focus {
         background: none;
         border: none;
+        margin-right: 0;
+        padding-right: 0;
 
         .icon-bar {
             background: #b2b2b2;
