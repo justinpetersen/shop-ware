@@ -216,10 +216,6 @@
             padding-top: 130px;
             text-align: center;
             z-index: 10; /* Workaround for divider line appearing over orange div due to mobile Safari margine fix */
-
-            @media (max-width: 768px) {
-                display: none;
-            }
         }
 
         .home-footer-right-col {
