@@ -11,7 +11,8 @@
             font-size: 12px;
 
             a {
-                padding-left: 0;
+                padding-left: 25px;
+                padding-right: 0;
             }
 
             a:link,
@@ -34,6 +35,13 @@
                 background: none;
                 color: #f25822;
             }
+        }
+
+        .divider {
+            padding-top: 15px;
+            padding-left: 25px;
+            padding-right: 0;
+            color: #b2b2b2;
         }
     }
 
