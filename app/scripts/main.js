@@ -25,8 +25,10 @@ TabGroup.prototype.setActiveTab = function(activeIndex) {
 	$('.home-tab').each(function(index) {
 		if (index === activeIndex) {
 			$(this).addClass('active');
+			$(this).addClass('active-tab');
 		} else {
 			$(this).removeClass('active');
+			$(this).removeClass('active-tab');
 		}
 	});
 	$('.home-tab-slide').each(function(index) {
@@ -61,6 +63,7 @@ TabGroup.prototype.initScrollOnCollapse = function() {
 TabGroup.prototype.cloneTab = function(element, index) {
 	var clone = element.clone();
 	clone.addClass('active');
+	clone.addClass('accordion-tab');
 	$('.panel-title').eq(index).append(clone);
 };
 

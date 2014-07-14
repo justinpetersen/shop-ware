@@ -10,6 +10,8 @@
         max-width: 1200px;
 
         .home-tab-col {
+            background-color: #fff;
+
             @media (min-width: 768px) {
                 padding: 0;
             }
@@ -17,7 +19,10 @@
 
         .home-tab {
             height: 110px;
-            background: #eaeaea url('../images/tab-gradient.png') no-repeat right bottom;
+            background-color: #eaeaea;
+            background-image: url('../images/tab-gradient.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
             opacity: 0.5;
             transition: opacity 0.4s;
             cursor: pointer;
@@ -30,7 +35,7 @@
                 position: relative;
                 padding-top: 32px;
                 padding-left: 20px;
-                padding-right: 10px;
+                padding-right: 25px;
 
                 @media (min-width: 768px) {
                     float: right;
@@ -46,6 +51,10 @@
                     position: absolute;
                     top: 32px;
                     right: 20px;
+
+                    @media (min-width: 768px) {
+                        right: 35px;
+                    }
                 }
 
                 .home-tab-heading {
@@ -73,6 +82,14 @@
             opacity: 1;
         }
 
+        .active-tab {
+            background-image: url('../images/tab-gradient-active.png');
+        }
+
+        .accordion-tab {
+            background-image: url('../images/tab-gradient-accordion.png');
+        }
+
         .active {
             opacity: 1;
         }
@@ -95,14 +112,14 @@
 
                     @media (min-width: 768px) and (max-width: 992px) {
                         padding-top: 40px;
-                        margin-left: 40px;
+                        margin-left: 25px;
                         margin-right: 40px;
                     }
 
                     @media (min-width: 992px) {
                         padding-top: 70px;
                         padding-bottom: 10px;
-                        margin-left: 65px;
+                        margin-left: 50px;
                         border-bottom: 1px solid #d5e9e8;
                     }
 
@@ -121,13 +138,13 @@
 
                     @media (min-width: 768px) and (max-width: 992px) {
                         margin-top: 10px;
-                        margin-left: 40px;
+                        margin-left: 25px;
                         margin-right: 40px;
                     }
 
                     @media (min-width: 992px) {
                         margin-top: 60px;
-                        margin-left: 65px;
+                        margin-left: 50px;
                     }
                 }
 
@@ -136,7 +153,7 @@
                     width: 100%;
 
                     @media (min-width: 768px) and (max-width: 992px) {
-                        padding-left: 40px;
+                        padding-left: 25px;
                         width: auto;
                     }
 
@@ -188,7 +205,7 @@
     }
 
     .panel-body {
-        height: 480px;
+        height: 510px;
     }
 
     .panel + .panel {
