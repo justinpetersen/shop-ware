@@ -115,7 +115,7 @@ ScrollWatcher.prototype.updateHeaderPosition = function() {
 	if (this.headerOffset === -1) {
 		this.headerOffset = offset;
 	}
-	if ($(window).scrollTop() > this.headerOffset) {
+	if ($(window).scrollTop() > this.headerOffset - 50) {
 		this.showFixedHeader();
 	} else {
 		this.hideFixedHeader();
@@ -130,6 +130,11 @@ ScrollWatcher.prototype.showFixedHeader = function() {
 		$('.header-fixed').find('.sign-up-copy').fadeIn();
 		$('.header-fixed').find('.header-copy').fadeIn();
 	}
+
+	$('.navbar-default').css('position', 'fixed');
+	$('.navbar-default').addClass('nav-background');
+	$('.navbar-default').css('background-position-y', (-this.headerOffset + 50) + 'px');
+	$('.navbar-default').removeClass('nav-no-background');
 };
 
 ScrollWatcher.prototype.hideFixedHeader = function() {
@@ -140,6 +145,10 @@ ScrollWatcher.prototype.hideFixedHeader = function() {
 		$('.header-fixed').find('.sign-up-copy').hide();
 		$('.header-fixed').find('.header-copy').hide();
 	}
+
+	$('.navbar-default').css('position', 'absolute');
+	$('.navbar-default').removeClass('nav-background');
+	$('.navbar-default').addClass('nav-no-background');
 };
 
 /* INITIALIZE
