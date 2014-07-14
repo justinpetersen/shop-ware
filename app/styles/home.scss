@@ -35,10 +35,11 @@
                 position: relative;
                 padding-top: 32px;
                 padding-left: 20px;
-                padding-right: 25px;
+                padding-right: 10px;
 
                 @media (min-width: 768px) {
                     float: right;
+                    padding-right: 25px;
                 }
 
                 .tab-number-circle {
