@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 
 .nav-background {
-    background: #283339 url('../images/header-background.jpg') no-repeat top center;
+    background-color: #283339;
 }
 
 .nav-no-background {
@@ -72,6 +72,7 @@
     .navbar-toggle:focus {
         background: none;
         border: none;
+        margin-top: 18px;
 
         .icon-bar {
             background: #b2b2b2;
@@ -88,6 +89,7 @@
 
 .header-top {
     background: #283339 url('../images/header-background.jpg') no-repeat top center;
+    background-size: cover;
     color: #fff;
     padding-bottom: 40px;
 

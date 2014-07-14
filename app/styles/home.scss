@@ -10,7 +10,10 @@
         max-width: 1200px;
 
         .home-tab-col {
-            background-color: #fff;
+            background-color: #eaeaea;
+            background-image: url('../images/tab-gradient.png');
+            background-repeat: repeat-y;
+            background-position: right bottom;
 
             @media (min-width: 768px) {
                 padding: 0;
