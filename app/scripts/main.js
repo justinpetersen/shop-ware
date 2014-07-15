@@ -136,7 +136,6 @@ ScrollWatcher.prototype.showFixedHeader = function() {
 
 	$('.navbar-default').css('position', 'fixed');
 	$('.navbar-default').addClass('nav-background');
-	$('.navbar-default').css('background-position-y', (-this.headerOffset + 50) + 'px');
 	$('.navbar-default').removeClass('nav-no-background');
 };
 
