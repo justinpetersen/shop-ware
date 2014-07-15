@@ -5,8 +5,8 @@
 
 var TabGroup = function() { };
 
-TabGroup.prototype.onTabClick = function(index) {
-	this.setActiveTab(index);
+TabGroup.prototype.onTabClick = function(index, device) {
+	this.setActiveTab(index, device);
 };
 
 TabGroup.prototype.init = function() {
@@ -16,13 +16,16 @@ TabGroup.prototype.init = function() {
 
 TabGroup.prototype.initTabs = function() {
 	var that = this;
-	$('.home-tab').each(function(index) {
-		$(this).on('click', $.proxy(that.onTabClick, that, index));
+	$('.home-tab.desktop').each(function(index) {
+		$(this).on('click', $.proxy(that.onTabClick, that, index, 'desktop'));
+	});
+	$('.home-tab.mobile').each(function(index) {
+		$(this).on('click', $.proxy(that.onTabClick, that, index, 'mobile'));
 	});
 };
 
-TabGroup.prototype.setActiveTab = function(activeIndex) {
-	$('.home-tab').each(function(index) {
+TabGroup.prototype.setActiveTab = function(activeIndex, device) {
+	$('.home-tab.' + device).each(function(index) {
 		if (index === activeIndex) {
 			$(this).addClass('active');
 			$(this).addClass('active-tab');
@@ -31,13 +34,16 @@ TabGroup.prototype.setActiveTab = function(activeIndex) {
 			$(this).removeClass('active-tab');
 		}
 	});
-	$('.home-tab-slide').each(function(index) {
-		if (index === activeIndex) {
-			$(this).addClass('active');
-		} else {
-			$(this).removeClass('active');
-		}
-	});
+
+	if (device === 'desktop') {
+		$('.home-tab-slide.desktop').each(function(index) {
+			if (index === activeIndex) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
+	}
 };
 
 TabGroup.prototype.initAccordion = function() {
@@ -62,14 +68,16 @@ TabGroup.prototype.initScrollOnCollapse = function() {
 
 TabGroup.prototype.cloneTab = function(element, index) {
 	var clone = element.clone();
-	clone.addClass('active');
 	clone.addClass('accordion-tab');
+	clone.addClass('mobile');
+	clone.removeClass('desktop');
 	$('.panel-title').eq(index).append(clone);
 };
 
 TabGroup.prototype.cloneTabSlide = function(element, index) {
 	var clone = element.clone();
 	clone.addClass('active');
+	clone.removeClass('desktop');
 	$('.panel-body').eq(index).append(clone);
 };
 
