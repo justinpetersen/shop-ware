@@ -25,6 +25,26 @@
             padding-right: 100px;
         }
 
+        article {
+            margin-top: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        article:last-child {
+            border: none;
+        }
+
+        .entry-meta {
+            .author {
+                display: none;
+            }
+
+            .meta-sep {
+                display: none;
+            }
+        }
+
         .entry-content {
             padding-top: 40px;
 
@@ -78,6 +98,11 @@
 
 .news-sidebar {
     background-color: #273339;
+
+    h3 {
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
 
     ul {
         padding-left: 0;

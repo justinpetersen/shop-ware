@@ -61,7 +61,7 @@ TabGroup.prototype.initAccordion = function() {
 TabGroup.prototype.initScrollOnCollapse = function() {
 	$('#accordion').on('shown.bs.collapse', function (e) {
         $('html,body').animate({
-            scrollTop: $(e.target).offset().top
+            scrollTop: $(e.target).offset().top - 110
         }, 500);
     });
 };

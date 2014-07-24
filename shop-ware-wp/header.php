@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href=/65f2ed96.favicon.ico>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel=stylesheet href=/styles/f0e2ad03.main.css>
+        <link rel=stylesheet href=/styles/34567d3f.main.css>
         <script src=/scripts/vendor/fbe20327.modernizr.js></script>
 
     
@@ -67,8 +67,8 @@
         <div class="container-fluid header-bottom news-header">
             <div class=container>
                 <div class=row>
-                    <div class="col-xs-12 col-sm-6 col-md-8">&nbsp;</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-7 col-md-8">&nbsp;</div>
+                    <div class="col-xs-12 col-sm-5 col-md-4">
                         <div class=sign-up-copy>
                             <a href=#><button type=button class="btn btn-primary sign-up-button"><h3>Get Started</h3></button></a>
                             <p class=sign-up-heading>Try it free for 30 days! No credit card required.</p>
@@ -80,10 +80,10 @@
         <div class="container-fluid header-bottom header-fixed">
             <div class=container>
                 <div class=row>
-                    <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="col-xs-12 col-sm-7 col-md-8">
                         <div><img class=logo src=/images/cac2b2e1.shop-ware-logo-sm.png width=220 height=101></div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-5 col-md-4">
                         <div class=sign-up-copy>
                             <a href=#><button type=button class="btn btn-primary sign-up-button"><h3>Get Started</h3></button></a>
                             <p class=sign-up-heading>Try it free for 30 days! No credit card required.</p>

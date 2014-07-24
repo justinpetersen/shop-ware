@@ -41,7 +41,8 @@ ScrollWatcher.prototype.disable = function() {
 };
 
 ScrollWatcher.prototype.updateHeaderPosition = function() {
-	var offset = $('.header-bottom').offset().top;
+	var headerRel = $.find('.about-header-container').length > 0 ? $('.about-header-container') : $('.header-bottom');
+	var offset = headerRel.offset().top;
 	if (this.headerOffset === -1) {
 		this.headerOffset = offset;
 	}
@@ -59,8 +60,13 @@ ScrollWatcher.prototype.showFixedHeader = function() {
 		$('.header-rel').find('.sign-up-copy').hide();
 		$('.header-rel').find('.video-image').hide();
 		$('.header-fixed').find('.logo').fadeIn();
-		$('.header-fixed').find('.sign-up-copy').fadeIn();
 		$('.header-fixed').find('.header-copy').fadeIn();
+
+		if ($.find('.news-header').length > 0) {
+			$('.header-fixed').find('.sign-up-copy').show();
+		} else {
+			$('.header-fixed').find('.sign-up-copy').fadeIn();
+		}
 	}
 
 	$('.navbar-default').css('position', 'fixed');

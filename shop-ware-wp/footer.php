@@ -5,11 +5,11 @@
             </div>
         </div>
         <div class="container-fluid news-sidebar-image-container hidden-xs">
-            <div class="container">
-                <div class="row">
+            <div class=container>
+                <div class=row>
                     <div class="col-xs-12 col-sm-7 col-md-8"></div>
                     <div class="col-xs-12 col-sm-5 col-md-4 news-sidebar-image">
-                        <img src="/images/wrench-icon.png" width="43" height="159">
+                        <img src=/images/8048ea50.wrench-icon.png width=43 height=159>
                     </div>
                 </div>
             </div>
