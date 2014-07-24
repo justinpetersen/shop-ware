@@ -57,4 +57,18 @@
 
 .news-sidebar {
     background-color: #273339;
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+            h3 {
+                color: #fff;
+                margin-top: 40px;
+            }
+
+            margin-top: 20px;
+        }
+    }
 }
