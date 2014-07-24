@@ -25,6 +25,14 @@
         <![endif]-->
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <iframe class="vimeo-player" src="//player.vimeo.com/video/20796410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+
+
         <div class="container-fluid nav-container">
             <nav class="navbar navbar-default navbar-fixed-top nav-no-background" role="navigation">
                 <div class="container">
@@ -71,7 +79,7 @@
             </div>
         </div>
         <div class="container-fluid video-image-container visible-xs">
-            <img class="video-image" src="images/video-image.jpg">
+            <a href="https://vimeo.com/20796410" target="_blank"><img class="video-image" src="images/video-image.jpg"></a>
         </div>
         <div class="container-fluid header-bottom header-rel">
             <div class="container">
@@ -83,7 +91,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-6">
-                        <img class="video-image hidden-xs" src="images/video-image.jpg" width="527" height="316">
+                        <img class="video-image hidden-xs" src="images/video-image.jpg" width="527" height="316" data-toggle="modal" data-target="#videoModal">
                     </div>
                 </div>
             </div>

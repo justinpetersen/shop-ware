@@ -252,3 +252,26 @@
         }
     }
 }
+
+/* VIMEO PLAYER
+-------------------------------------------------- */
+
+.modal-lg {
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 700px;
+    }
+    @media (min-width: 992px) {
+        width: 960px;
+    }
+    text-align: center;
+}
+
+.vimeo-player {
+    width: 700px;
+    height: 350px;
+
+    @media (min-width: 992px) {
+        width: 960px;
+        height: 480px;
+    }
+}
