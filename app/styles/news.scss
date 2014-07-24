@@ -1,12 +1,18 @@
 .news-header {
-    background: #f25822 url('../images/white-orange-background.png') repeat-y center top;
+    background-color: #fff;
+    
+    @media (min-width: 768px) {
+        background: #f25822 url('../images/white-orange-background.png') repeat-y center top;
+    }
 }
 
 /* NEWS MAIN CONTENT
 -------------------------------------------------- */
 
 .news-main {
-    background: #fff url('../images/white-blue-background.png') repeat-y center top;
+    @media (min-width: 768px) {
+        background: #fff url('../images/white-blue-background.png') repeat-y center top;
+    }
 
     .news-content {
         background-color: #fff;
