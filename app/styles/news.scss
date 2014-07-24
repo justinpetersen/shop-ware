@@ -84,12 +84,34 @@
         list-style-type: none;
 
         li {
+            margin-top: 10px;
+
             h3 {
                 color: #fff;
                 margin-top: 40px;
             }
 
-            margin-top: 20px;
+            a {
+                text-decoration: underline;
+            }
+
+            a:hover {
+                color: #fff;
+            }
         }
+    }
+}
+
+.news-sidebar-image-container {
+    background: #f25822 url('../images/white-orange-background.png') repeat-y center top;
+    height: 415px;
+    margin-top: -415px;
+
+    .news-sidebar-image {
+        background: #f25822 url('../images/orange-background.jpg') no-repeat;
+        background-size: cover;
+        height: 415px;
+        padding-top: 130px;
+        text-align: center;
     }
 }
