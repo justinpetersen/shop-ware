@@ -17,12 +17,17 @@
     .news-content {
         background-color: #fff;
         margin-top: -137px;
-        padding-top: 50px;
-        padding-right: 40px;
-        padding-bottom: 50px;
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding-top: 50px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+        }
 
         @media (min-width: 992px) {
+            padding-top: 50px;
             padding-right: 100px;
+            padding-bottom: 50px;
         }
 
         article {
@@ -33,6 +38,16 @@
 
         article:last-child {
             border: none;
+        }
+
+        .entry-title {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+            @media (min-width: 768px) {
+                font-size: 26px;
+            }
         }
 
         .entry-meta {
@@ -129,14 +144,14 @@
 
 .news-sidebar-image-container {
     background: #f25822 url('../images/white-orange-background.png') repeat-y center top;
-    height: 415px;
-    margin-top: -415px;
+    height: 375px;
+    margin-top: -375px;
 
     .news-sidebar-image {
         background: #f25822 url('../images/orange-background.jpg') no-repeat;
         background-size: cover;
-        height: 415px;
-        padding-top: 130px;
+        height: 375px;
+        padding-top: 110px;
         text-align: center;
     }
 }

@@ -59,11 +59,11 @@
 
 .about-copy {
     font-size: 15px;
-	margin-top: 32px;
-	margin-bottom: 32px;
+	margin-bottom: 20px;
 
     @media (min-width: 768px) {
         font-size: 18px;
+        margin-top: 32px;
         margin-bottom: 170px;
     }
 

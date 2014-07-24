@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 footer-right-col">
-                        <p class=footer-text-legal>&copy; SHOP-WARE 2014 | <a href=#>PRIVACY POLICY</a></p>
+                        <p class=footer-text-legal>&copy; SHOP-WARE 2014 | <a href=/privacy.html>PRIVACY POLICY</a></p>
                     </div>
                 </div>
             </div>
@@ -49,5 +49,5 @@
 
         <script src=/scripts/6b5da0e8.plugins.js></script>
 
-        <script src=/scripts/ea2a5853.news-main.js></script>
+        <script src=/scripts/b5d82057.news-main.js></script>
 
