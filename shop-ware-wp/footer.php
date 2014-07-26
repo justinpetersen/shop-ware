@@ -49,5 +49,5 @@
 
         <script src=/scripts/6b5da0e8.plugins.js></script>
 
-        <script src=/scripts/b5d82057.news-main.js></script>
+        <script src=/scripts/8e4cf210.news-main.js></script>
 

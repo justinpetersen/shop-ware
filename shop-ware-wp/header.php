@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href=/65f2ed96.favicon.ico>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel=stylesheet href=/styles/54c718c6.main.css>
+        <link rel=stylesheet href=/styles/3cd4ec57.main.css>
         <script src=/scripts/vendor/fbe20327.modernizr.js></script>
 
     
@@ -18,9 +18,12 @@
         <![endif]-->
 
 
-       <div class="container-fluid nav-container">
-            <nav class="navbar navbar-default navbar-fixed-top nav-no-background" role=navigation>
+        <div class=container-fluid>
+            <nav class="navbar navbar-default navbar-fixed-top" role=navigation>
                 <div class=container>
+                    <div class=logo>
+                        <a href=/index.html><img src=/images/cac2b2e1.shop-ware-logo-sm.png width=115 height=53></a>
+                    </div>
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class=navbar-header>
                         <button type=button class=navbar-toggle data-toggle=collapse data-target=#main-nav>
@@ -33,7 +36,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-right" id=main-nav>
                         <ul class="nav navbar-nav">
-                            <li class=visible-xs><a href=index.html>HOME</a></li>
+                            <li class=visible-xs><a href=/index.html>HOME</a></li>
                             <li><a href=/pricing.html>PRICING</a></li>
                             <li><a href=/about.html>ABOUT</a></li>
                             <li class=active><a href="/news/">NEWS</a></li>
@@ -41,9 +44,14 @@
                             <li><a href=#>LOGIN</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
-                </div></nav>
-            </div>
-        
+                    <div class=sign-up-copy>
+                        <a href=#><button type=button class="btn btn-primary sign-up-button"><h3>Get Started</h3></button></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
         <div class="container-fluid header-top">
             <div class=container>
                 <div class=row>
@@ -77,24 +85,9 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid header-bottom header-fixed">
-            <div class=container>
-                <div class=row>
-                    <div class="col-xs-12 col-sm-7 col-md-8">
-                        <div><img class=logo src=/images/cac2b2e1.shop-ware-logo-sm.png width=220 height=101></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-5 col-md-4">
-                        <div class=sign-up-copy>
-                            <a href=#><button type=button class="btn btn-primary sign-up-button"><h3>Get Started</h3></button></a>
-                            <p class=sign-up-heading>Try it free for 30 days! No credit card required.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container-fluid news-main">
             <div class=container>
-                <div class=row>
+                <div class="row row-eq-height">
 
 
 

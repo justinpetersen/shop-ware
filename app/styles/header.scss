@@ -1,18 +1,39 @@
 /* NAV
 -------------------------------------------------- */
 
-.nav-background {
-    background-color: #283339;
-}
-
-.nav-no-background {
-    background: none;
-}
-
 .navbar-default {
+    background: none;
     position: absolute;
     border: none;
+    margin-top: 0;
     margin-bottom: 0;
+
+
+    height: 74px;
+
+    .logo {
+        float: left;
+        display: none;
+        margin-top: 11px;
+    }
+
+    .sign-up-copy {
+        float: right;
+        display: none;
+        margin-top: 20px;
+        margin-right: 60px;
+
+        .sign-up-button {
+            width: 224px;
+            height: 29px;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
 
     .navbar-collapse {
         border: none;
@@ -26,6 +47,8 @@
     }
 
     .navbar-nav {
+        margin-top: 10px;
+
         li {
             font-size: 12px;
 
@@ -42,7 +65,7 @@
             a:visited,
             a:hover,
             a:active {
-                color: #b2b2b2;
+                color: #eae7e6;
             }
 
             a:hover {
@@ -56,7 +79,7 @@
             a:hover,
             a:active {
                 background: none;
-                color: #f25822;
+                color: #fff;
             }
         }
 
@@ -64,7 +87,7 @@
             padding-top: 15px;
             padding-left: 25px;
             padding-right: 0;
-            color: #b2b2b2;
+            color: #eae7e6;
         }
     }
 
@@ -75,7 +98,7 @@
         margin-top: 18px;
 
         .icon-bar {
-            background: #b2b2b2;
+            background: #eae7e6;
         }
     }
 
@@ -229,17 +252,5 @@
             top: -179px;
             width: 527px;
         }
-    }
-}
-
-.header-fixed {
-    display: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-
-    .logo {
-        margin-top: 20px;
     }
 }
