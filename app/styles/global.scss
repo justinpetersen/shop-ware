@@ -61,6 +61,15 @@ a:active {
 	clear: both;
 }
 
+.absolute-center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 .btn-primary {
 	background-color: hsl(200, 66%, 26%) !important;
 	background-repeat: repeat-x;
@@ -91,6 +100,38 @@ a:active {
 	background-image: -webkit-linear-gradient(top, #16526e, #2791c2);
 	background-image: -o-linear-gradient(top, #16526e, #2791c2);
 	background-image: linear-gradient(#16526e, #2791c2);
+}
+
+.video-button {
+	background-color: #fe8301 !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe8301", endColorstr="#fc5b00");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#fe8301), to(#fc5b00));
+	background-image: -moz-linear-gradient(top, #fe8301, #fc5b00);
+	background-image: -ms-linear-gradient(top, #fe8301, #fc5b00);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8301), color-stop(100%, #fc5b00));
+	background-image: -webkit-linear-gradient(top, #fe8301, #fc5b00);
+	background-image: -o-linear-gradient(top, #fe8301, #fc5b00);
+	background-image: linear-gradient(#fe8301, #fc5b00);
+	border: none;
+	color: #fff !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+	-webkit-font-smoothing: antialiased;
+
+	box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.video-button:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fc5b00", endColorstr="#fe8301");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#fc5b00), to(#fe8301));
+	background-image: -moz-linear-gradient(top, #fc5b00, #fe8301);
+	background-image: -ms-linear-gradient(top, #fc5b00, #fe8301);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc5b00), color-stop(100%, #fe8301));
+	background-image: -webkit-linear-gradient(top, #fc5b00, #fe8301);
+	background-image: -o-linear-gradient(top, #fc5b00, #fe8301);
+	background-image: linear-gradient(#fc5b00, #fe8301);
 }
 
 .number-circle {

@@ -88,6 +88,11 @@
         </div>
         <div class="container-fluid video-image-container visible-xs">
             <a href="https://vimeo.com/20796410" target="_blank"><img class="video-image" src="images/video-image.jpg"></a>
+            <button type="button" class="btn btn-primary video-button absolute-center">
+                <h3>
+                    <span class="glyphicon glyphicon-play"></span>
+                </h3>
+            </button>
         </div>
         <div class="container-fluid header-bottom header-rel">
             <div class="container">
@@ -99,7 +104,14 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-6">
-                        <img class="video-image hidden-xs" src="images/video-image.jpg" width="527" height="316" data-toggle="modal" data-target="#videoModal">
+                        <div class="video-image-container hidden-xs">
+                            <img class="video-image" src="images/video-image.jpg" width="527" height="316" data-toggle="modal" data-target="#videoModal">
+                            <button type="button" class="btn btn-primary video-button absolute-center" data-toggle="modal" data-target="#videoModal">
+                                <h3>
+                                    <span class="glyphicon glyphicon-play"></span>
+                                </h3>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +119,7 @@
 
 
         <div class="container-fluid home-main hidden-xs">
-            <div class="container-fluid home-main-container">
+            <div class="container home-main-container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-3 home-tab-col">
                         <div class="home-tab desktop active active-tab">
@@ -161,16 +173,17 @@
                             <div class="tab-slide-copy">
                                 <ul class="ul-unstyled ul-how-to">
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Perform inspections</strong><br>as you see fit</p>
+                                        <p><strong>Perform inspections</strong><br>as you see fit</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Customize checklists</strong><br>according to your shop priorities</p>
+                                        <p><strong>Customize checklists</strong><br>according to your shop priorities</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Use your web browser</strong><br>anyplace, anytime</p>
+                                        <p><strong>Use your web browser</strong><br>anyplace, anytime</p>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="next-arrow"><img src="images/next-arrow.png"></div>
                         </div>
                         <div class="home-tab-slide desktop">
                             <div class="tab-slide-heading">
@@ -181,16 +194,17 @@
                             <div class="tab-slide-copy">
                                 <ul class="ul-unstyled ul-how-to">
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Send to service desk</strong><br>or directly to customer</p>
+                                        <p><strong>Send to service desk</strong><br>or directly to customer</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Increase efficiency</strong><br>with technology</p>
+                                        <p><strong>Increase efficiency</strong><br>with technology</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Convenient for you</strong><br>and your customer</p>
+                                        <p><strong>Convenient for you</strong><br>and your customer</p>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="next-arrow"><img src="images/next-arrow.png"></div>
                         </div>
                         <div class="home-tab-slide desktop">
                             <div class="tab-slide-heading">
@@ -201,16 +215,17 @@
                             <div class="tab-slide-copy">
                                 <ul class="ul-unstyled ul-how-to">
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Get instant email alerts</strong><br>when customers respond</p>
+                                        <p><strong>Get instant email alerts</strong><br>when customers respond</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Keep a record of conversations</strong><br>all in one place</p>
+                                        <p><strong>Keep a record of conversations</strong><br>all in one place</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Everything is tracked</strong><br>and accessible in the job log</p>
+                                        <p><strong>Everything is tracked</strong><br>and accessible in the job log</p>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="next-arrow"><img src="images/next-arrow.png"></div>
                         </div>
                         <div class="home-tab-slide desktop">
                             <div class="tab-slide-heading">
@@ -221,16 +236,17 @@
                             <div class="tab-slide-copy">
                                 <ul class="ul-unstyled ul-how-to">
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Archive all past jobs</strong><br>by customer, to review anytime</p>
+                                        <p><strong>Archive all past jobs</strong><br>by customer, to review anytime</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>No paper required</strong><br>searchable and accessible 24/7</p>
+                                        <p><strong>No paper required</strong><br>searchable and accessible 24/7</p>
                                     </li>
                                     <li>
-                                        <p class="tab-slide-list-copy"><strong>Gain customer trust</strong><br>with a well-documented job history</p>
+                                        <p><strong>Gain customer trust</strong><br>with a well-documented job history</p>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="next-arrow"><img src="images/next-arrow.png"></div>
                         </div>
                     </div>
                 </div>
@@ -287,7 +303,7 @@
                         <img src="images/wrench-icon.png" width="43" height="159">
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-7 home-footer-right-col">
-                        <img class="animation-image" src="images/checklist-icon.png" width="125" height="72">
+                        <img class="animation-image" src="images/works-anywhere-icon.png" width="125" height="72">
                         <h2 class="works-anywhere-heading animation-heading">Works anywhere</h2>
                         <h4 class="animation-subheading">Computers, tablets and smartphones</h4>
                     </div>

@@ -22,13 +22,13 @@ var AnimationManager = function() {
 		}
 	];
 
-	this.currentIndex = 0;
+	this.currentIndex = 2;
 };
 
 AnimationManager.prototype.init = function() {
 	this.preloadImages();
 
-	window.setInterval($.proxy(this.transition, this), 6000);
+	window.setInterval($.proxy(this.transition, this), 5000);
 };
 
 AnimationManager.prototype.preloadImages = function() {
@@ -53,9 +53,9 @@ AnimationManager.prototype.showNext = function() {
 	$('.animation-heading').html(this.values[this.currentIndex].heading);
 	$('.animation-subheading').html(this.values[this.currentIndex].subheading);
 
-	$('.animation-image').animate({'opacity': 1});
-	$('.animation-heading').animate({'opacity': 1}, 600);
-	$('.animation-subheading').animate({'opacity': 1}, 800);
+	$('.animation-image').animate({opacity: 1});
+	$('.animation-heading').animate({opacity: 1}, 600);
+	$('.animation-subheading').animate({opacity: 1}, 800);
 };
 
 /* INITIALIZE

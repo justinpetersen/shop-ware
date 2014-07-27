@@ -188,16 +188,32 @@
 }
 
 .video-image-container {
+    position: relative;
     padding: 0;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        height: auto;
+        top: -115px;
+        right: 0;
+        width: 420px;
+    }
+
+    @media (min-width: 992px) {
+        top: -179px;
+        width: 527px;
+    }
 
     .video-image {
         width: 100%;
         height: auto;
+        cursor: pointer;
     }
-}
 
-.video-image {
-    cursor: pointer;
+    .video-button {
+        width: 58px;
+        height: 40px;
+    }
 }
 
 .header-bottom {
@@ -208,7 +224,6 @@
 
     .sign-up-copy {
         margin-top: 33px;
-        margin-bottom: 33px;
         text-align: center;
 
         @media (min-width: 768px) {
@@ -239,18 +254,6 @@
 
         @media (max-width: 992px) {
             font-size: 30px;
-        }
-    }
-
-    .video-image {
-        position: absolute;
-        top: -115px;
-        width: 420px;
-        height: auto;
-
-        @media (min-width: 992px) {
-            top: -179px;
-            width: 527px;
         }
     }
 }
