@@ -194,14 +194,15 @@
     @media (min-width: 768px) {
         position: absolute;
         height: auto;
-        top: -115px;
-        right: 0;
-        width: 420px;
+        top: -103px;
+        right: 20px;
+        width: 400px;
     }
 
     @media (min-width: 992px) {
         top: -179px;
         width: 527px;
+        right: 17px;
     }
 
     .video-image {
