@@ -53,7 +53,7 @@ AnimationManager.prototype.showNext = function() {
 	$('.animation-heading').html(this.values[this.currentIndex].heading);
 	$('.animation-subheading').html(this.values[this.currentIndex].subheading);
 
-	$('.animation-image').animate({opacity: 1});
+	$('.animation-image').animate({opacity: 1, top: '+=20'});
 	$('.animation-heading').animate({opacity: 1}, 600);
 	$('.animation-subheading').animate({opacity: 1}, 800);
 };

@@ -251,11 +251,16 @@
         .home-footer-right-col {
             background: #283339 url('../images/blue-background.jpg') no-repeat;
             background-size: cover;
-            height: 415px;
-            padding-top: 130px;
             text-align: center;
+            height: 315px;
+            padding-top: 80px;
 
-            .works-anywhere-heading {
+            @media (min-width: 768px) {
+                height: 415px;
+                padding-top: 130px;
+            }
+
+            .animation-heading {
                 margin-top: 25px;
             }
         }
@@ -265,22 +270,26 @@
 /* VIMEO PLAYER
 -------------------------------------------------- */
 
-.modal-lg {
-    @media (min-width: 768px) and (max-width: 992px) {
+.modal-dialog {
+    margin: 0 auto;
+
+    .modal-lg {
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 700px;
+        }
+        @media (min-width: 992px) {
+            width: 960px;
+        }
+        text-align: center;
+    }
+
+    .vimeo-player {
         width: 700px;
-    }
-    @media (min-width: 992px) {
-        width: 960px;
-    }
-    text-align: center;
-}
+        height: 350px;
 
-.vimeo-player {
-    width: 700px;
-    height: 350px;
-
-    @media (min-width: 992px) {
-        width: 960px;
-        height: 480px;
+        @media (min-width: 992px) {
+            width: 960px;
+            height: 480px;
+        }
     }
 }
