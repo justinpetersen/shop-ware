@@ -144,7 +144,7 @@
         }
 
         .header-home-heading {
-            font-size: 18px;
+            font-size: 22px;
 
             @media (min-width: 768px) and (max-width: 992px) {
                 font-size: 28px;
@@ -157,10 +157,10 @@
 
         .header-body-copy {
             margin-top: 10px;
-            font-size: 12px;
+            font-size: 14px;
 
             @media (min-width: 768px) {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
@@ -173,7 +173,7 @@
 
     .header-heading {
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 26px;
         text-align: center;
 
         @media (min-width: 768px) {
@@ -183,9 +183,17 @@
         }
     }
 
+    .header-heading-pricing {
+        font-size: 21px;
+
+        @media (min-width: 768px) {
+            font-size: 34px;
+        }
+    }
+
     .header-subheading {
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
 
         @media (min-width: 768px) {
