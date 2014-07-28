@@ -90,8 +90,11 @@ ScrollWatcher.prototype.fixNav = function() {
 	$('.navbar-default').css('background', 'none');
 	$('.navbar-default').css('position', 'absolute');
 	$('.navbar-default').css('top', 0);
-	$('.navbar-default').css('opacity', 0);
-	$('.navbar-default').animate({opacity: 1}, {queue: false});
+
+	if ($(window).outerWidth() >= 768) {
+		$('.navbar-default').css('opacity', 0);
+		$('.navbar-default').animate({opacity: 1}, {queue: false});
+	}
 };
 
 /* INITIALIZE
