@@ -1,0 +1,25 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+// bower:scss
+@import 'global.scss';
+// endbower
+
+/* FORMS
+-------------------------------------------------- */
+
+body {
+    background-color: #f25822;
+}
+
+.form-container {
+
+    .form-body-container {
+        background: #283339 url('../images/header-background.jpg') no-repeat top center;
+        background-size: cover;
+        text-align: center;
+    }
+}
