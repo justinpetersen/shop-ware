@@ -6,153 +6,49 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
         <!-- build:css(.tmp) styles/forms.css -->
         <link rel="stylesheet" href="/styles/forms.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="form-container">
+            <div class="form-body-container">
 
+                    <a href="/index.html"><img class="logo" src="/images/shop-ware-logo.png" alt="Shop-Ware"></a>
+                    <h2 class="form-heading">Get Started</h2>
+                    <h4 class="form-subheading">Try it free for 30 days! No credit card required.</h4>
+                    <p class="form-p">Enter the information below to setup a new Shop-Ware account.</p>
 
-<div class="form-container">
-<div class="form-body-container">
+                    <form accept-charset="UTF-8" action="/" class="new_user" id="new_user" method="post">
 
+                        <input name="utf8" type="hidden" value="&#x2713;" />
+                        <input name="authenticity_token" type="hidden" value="b07IhyeBhpQD4f4ABtffNjpM6vk+qFeE2OsIeDYSM/0=" />
 
-<div class="row-fluid">
-  <div class="span12">
+                        <div class="form-group">
+                            <input id="tenant_name" name="tenant[name]" required="required" type="text" placeholder="shop name" />
+                        </div>
 
-    <div class="login-container">
+                        <div class="form-group">
+                            <input id="user_email" name="user[email]" required="required" type="email" value="" placeholder="email" />
+                        </div>
 
-      <div class="row-fluid">
-        <div class="center">
-          <h1>
-            <i class="icon-wrench text-success"></i>
-            <span>ShopWare</span>
-          </h1>
+                        <div class="form-group">
+                            <input id="user_password" name="user[password]" required="required" type="password" placeholder="password"  />
+                            <p class="help-block">* Minimum is 8 characters required *</p>
+                            <input id="user_password_confirmation" name="user[password_confirmation]" required="required" type="password" placeholder="confirm password" />
+                        </div>
+
+                        <div class="form-group submit-form-group">
+                            <button class="btn btn-primary form-button" name="commit" type="submit" value="Sign up"><h3>Sign Up</h3></button>
+                        </div>
+                    </form>
+            </div>
+            <div class="form-footer-container">
+                <p>
+                    Already a customer? <a href="/login">Sign in</a>
+                </p>
+            </div>
         </div>
-      </div>
-
-      <div class="space-6"></div>
-
-      <div class="row-fluid">
-        <div class="clearfix">
-
-            <h4 class="lead">
-    <span class="icon-user"></span>
-    Please enter your information
-  </h4>
-
-  <form accept-charset="UTF-8" action="/" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="b07IhyeBhpQD4f4ABtffNjpM6vk+qFeE2OsIeDYSM/0=" /></div>
-
-    
-      <div>
-  <div>
-      <label for="tenant_name">Shop name</label>
-  </div>
-  <div>
-    <input class="span12" id="tenant_name" name="tenant[name]" required="required" type="text" />
-  </div>
-</div>
-
-
-
-    <div>
-  <div>
-      <label for="user_email">Email</label>
-  </div>
-  <div>
-    <input class="span12" id="user_email" name="user[email]" required="required" type="email" value="" />
-  </div>
-</div>
-
-
-    <small class="muted">Minimum is 8 characters</small>
-
-    <div>
-  <div>
-      <label for="user_password">Password</label>
-  </div>
-  <div>
-    <input class="span12" id="user_password" name="user[password]" required="required" type="password" />
-  </div>
-</div>
-
-
-    <div>
-  <div>
-      <label for="user_password_confirmation">Password confirmation</label>
-  </div>
-  <div>
-    <input class="span12" id="user_password_confirmation" name="user[password_confirmation]" required="required" type="password" />
-  </div>
-</div>
-
-
-    <div>
-      <input class="btn btn-primary" name="commit" type="submit" value="Sign up" />
-    </div>
-</form>
-
-        </div>
-          <a href="/login">Sign in</a><br />
-
-
-  <a href="/password/new">Forgot your password?</a><br />
-
-
-
-
-      </div><!--/row-fluid-->
-    </div><!--/login-container-->
-
-  </div>
-</div>
-
-
-</div>
-</div>
-
-
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
 </body>
 </html>
