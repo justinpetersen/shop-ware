@@ -229,6 +229,12 @@
 	    	width: 100%;
 	    	max-width: 410px;
 	    	height: auto;
+
+	    	.cloud-screen {
+	    		position: absolute;
+	    		top: 0;
+	    		left: 0;
+	    	}
 		}
 	}
 }

@@ -22,7 +22,7 @@ ScrollWatcher.prototype.init = function() {
 };
 
 ScrollWatcher.prototype.checkEnable = function() {
-	if ($(window).outerWidth() >= 768) {
+	if ($(window).innerWidth() >= 768) {
 		this.enable();
 	} else {
 		this.disable();
@@ -91,7 +91,7 @@ ScrollWatcher.prototype.fixNav = function() {
 	$('.navbar-default').css('position', 'absolute');
 	$('.navbar-default').css('top', 0);
 
-	if ($(window).outerWidth() >= 768) {
+	if ($(window).innerWidth() >= 768) {
 		$('.navbar-default').css('opacity', 0);
 		$('.navbar-default').animate({opacity: 1}, {queue: false});
 	}

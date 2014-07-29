@@ -28,7 +28,10 @@
         <!-- Modal -->
         <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <iframe class="vimeo-player" src="//player.vimeo.com/video/20796410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div class="video-player-container">
+                    <div class="close-video-modal-button hidden-xs"><span class="glyphicon glyphicon-remove"></span></div>
+                    <iframe class="vimeo-player" src="//player.vimeo.com/video/20796410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
@@ -303,9 +306,15 @@
                         <img src="images/wrench-icon.png" width="43" height="159">
                     </div>
                     <div class="col-xs-12 col-sm-7 col-md-7 home-footer-right-col">
-                        <img class="animation-image" src="images/works-anywhere-icon.png" width="125" height="72">
-                        <h2 class="animation-heading">Works anywhere</h2>
-                        <h4 class="animation-subheading">Computers, tablets and smartphones</h4>
+                        <div class="animation-container">
+                            <div class="animation-image-container">
+                                <img class="animation-image" src="images/checklist-icon.png" width="125" height="72" style="display: none;">
+                                <img class="animation-image" src="images/vin-icon.png" width="125" height="72" style="display: none;">
+                                <img class="animation-image" src="images/works-anywhere-icon.png" width="125" height="72">
+                            </div>
+                            <h2 class="animation-heading">Works anywhere</h2>
+                            <h4 class="animation-subheading">Computers, tablets and smartphones</h4>
+                        </div>
                     </div>
                 </div>
             </div>

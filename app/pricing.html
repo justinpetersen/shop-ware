@@ -158,7 +158,11 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 hidden-sm hidden-xs cloud-screens-col">
-                        <img class="cloud-screens" src="images/cloud-screens.png" width="410" height="183">
+                        <div class="cloud-screens">
+                            <img class="cloud-screen" src="images/screen-icon-desktop.png" width="410" height="183">
+                            <img class="cloud-screen cloud-screen-laptop" src="images/screen-icon-laptop.png" width="410" height="183">
+                            <img class="cloud-screen cloud-screen-mobile" src="images/screen-icon-mobile.png" width="410" height="183">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,6 +223,7 @@
 
         <!-- build:js({app,.tmp}) scripts/pricing-main.js -->
         <script src="scripts/scrollwatcher.js"></script>
+        <script src="scripts/pricinganimations.js"></script>
         <!-- endbuild -->
 </body>
 </html>
