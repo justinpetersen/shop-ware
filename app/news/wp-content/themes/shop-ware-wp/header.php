@@ -2,14 +2,15 @@
 <html class=no-js>
     <head>
         <meta charset=utf-8>
-        <title>Shop-Ware</title>
+        <title><?php wp_title( ' | ', true, 'right' ); ?></title>
         <meta name=description content="">
         <meta name=viewport content="width=device-width">
-        <link rel="shortcut icon" href=/65f2ed96.favicon.ico>
+        <link rel="shortcut icon" href=/ee07b75f.favicon.ico>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel=stylesheet href=/styles/da7a39e0.main.css>
+        <link rel=stylesheet href=/styles/b54b40ba.main.css>
         <script src=/scripts/vendor/fbe20327.modernizr.js></script>
+        <?php wp_head(); ?>
 
     
     <body>
@@ -41,7 +42,7 @@
                             <li><a href=/about.html>ABOUT</a></li>
                             <li class=active><a href="/news/">NEWS</a></li>
                             <li class=hidden-xs><div class=divider>|</div></li>
-                            <li><a href=#>LOGIN</a></li>
+                            <li><a href=https://app.shop-ware.com/login>LOGIN</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                     <div class=sign-up-copy>

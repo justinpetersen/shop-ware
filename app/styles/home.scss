@@ -134,6 +134,12 @@
                         border-bottom: 1px solid #d5e9e8;
                     }
 
+                    .tab-slide-heading-small {
+                        @media (min-width: 768px) and (max-width: 992px) {
+                            font-size: 25px;
+                        }
+                    }
+
                     .tab-slide-subheading {
                         padding-top: 5px;
                     }
@@ -141,21 +147,22 @@
 
                 .tab-slide-image {
                     float: left;
-                    margin-top: 20px;
+                    margin-top: 12px;
+                    margin-left: -8px;
                     margin-right: 10px;
                     width: 90%;
-                    max-width: 379px;
+                    max-width: 396px;
                     height: auto;
 
                     @media (min-width: 768px) and (max-width: 992px) {
-                        margin-top: 10px;
-                        margin-left: 25px;
+                        margin-top: 2px;
+                        margin-left: 17px;
                         margin-right: 40px;
                     }
 
                     @media (min-width: 992px) {
-                        margin-top: 60px;
-                        margin-left: 50px;
+                        margin-top: 52px;
+                        margin-left: 42px;
                     }
                 }
 
@@ -164,17 +171,21 @@
                     width: 100%;
 
                     @media (min-width: 768px) and (max-width: 992px) {
-                        padding-left: 25px;
+                        margin-left: 25px;
                     }
 
                     @media (min-width: 992px) {
-                        padding-top: 60px;
-                        padding-left: 20px;
+                        margin-top: 60px;
+                        margin-left: 20px;
                         width: auto;
                     }
 
                     .ul-how-to {
-                        padding-top: 20px;
+                        margin-top: 0;
+
+                        @media (min-width: 768px) and (max-width: 992px) {
+                            margin-top: -20px;
+                        }
                     }
                 }
 
@@ -218,7 +229,7 @@
     }
 
     .panel-body {
-        height: 510px;
+        height: 530px;
     }
 
     .panel + .panel {
