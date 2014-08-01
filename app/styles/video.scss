@@ -1,0 +1,37 @@
+/* VIMEO PLAYER
+-------------------------------------------------- */
+
+.modal-dialog {
+    margin: 0 auto;
+
+    .video-player-container {
+        .close-video-modal-button {
+            float: right;
+            font-size: 18px;
+            color: #fff;
+            margin-right: 18px;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        .vimeo-player {
+            width: 700px;
+            height: 400px;
+
+            @media (min-width: 992px) {
+                width: 960px;
+                height: 548px;
+            }
+        }
+    }
+}
+
+.modal-lg {
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 700px;
+    }
+    @media (min-width: 992px) {
+        width: 960px;
+    }
+    text-align: center;
+}

@@ -11,7 +11,7 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body data-placeholder-focus="false">
         <div class="form-container">
             <div class="form-body-container">
 
@@ -50,5 +50,16 @@
                 </p>
             </div>
         </div>
-</body>
+
+        <!-- build:js /scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) /scripts/forms-main.js -->
+        <script src="/scripts/placeholders.jquery.js"></script>
+        <!-- endbuild -->
+
+    </body>
 </html>

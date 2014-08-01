@@ -1,3 +1,7 @@
+// bower:scss
+@import 'video.scss';
+// endbower
+
 /* HOME PAGE TAB CONTENT
 -------------------------------------------------- */
 
@@ -150,7 +154,7 @@
                     margin-top: 12px;
                     margin-left: -8px;
                     margin-right: 10px;
-                    width: 90%;
+                    width: 100%;
                     max-width: 396px;
                     height: auto;
 
@@ -290,42 +294,4 @@
             }
         }
     }
-}
-
-/* VIMEO PLAYER
--------------------------------------------------- */
-
-.modal-dialog {
-    margin: 0 auto;
-
-    .video-player-container {
-        .close-video-modal-button {
-            float: right;
-            font-size: 18px;
-            color: #fff;
-            margin-right: 18px;
-            margin-bottom: 2px;
-            cursor: pointer;
-        }
-
-        .vimeo-player {
-            width: 700px;
-            height: 350px;
-
-            @media (min-width: 992px) {
-                width: 960px;
-                height: 480px;
-            }
-        }
-    }
-}
-
-.modal-lg {
-    @media (min-width: 768px) and (max-width: 992px) {
-        width: 700px;
-    }
-    @media (min-width: 992px) {
-        width: 960px;
-    }
-    text-align: center;
 }
