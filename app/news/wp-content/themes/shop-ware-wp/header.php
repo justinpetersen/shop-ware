@@ -2,16 +2,15 @@
 <html class=no-js>
     <head>
         <meta charset=utf-8>
-        <title><?php wp_title( ' | ', true, 'right' ); ?></title>
+        <title>Shop-Ware</title>
         <meta name=description content="">
         <meta name=viewport content="width=device-width">
         <link rel="shortcut icon" href=/ee07b75f.favicon.ico>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel=stylesheet href=/styles/b54b40ba.main.css>
+        <link rel=stylesheet href=/styles/0351c1da.main.css>
         <script src=/scripts/vendor/fbe20327.modernizr.js></script>
         <?php wp_head(); ?>
-
     
     <body>
         <!--[if lt IE 10]>

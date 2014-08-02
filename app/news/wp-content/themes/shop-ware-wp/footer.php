@@ -47,9 +47,6 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src=/scripts/6b5da0e8.plugins.js></script>
+        <script src=/scripts/9d2f4f51.plugins.js></script>
 
         <script src=/scripts/01cb349e.news-main.js></script>
-        
-
-        <?php wp_footer(); ?>
