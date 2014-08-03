@@ -230,6 +230,11 @@
 
     .panel-heading {
         padding: 0;
+
+        .panel-title {
+            color: #000;
+            text-decoration: none;
+        }
     }
 
     .panel-body {
