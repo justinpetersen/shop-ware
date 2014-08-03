@@ -220,10 +220,24 @@ module.exports = function (grunt) {
         // concat, minify and revision files. Creates configurations in memory so
         // additional tasks can operate on them
         useminPrepare: {
-            options: {
-                dest: '<%= config.dist %>'
+            root: {
+                options: {
+                    dest: '<%= config.dist %>'
+                },
+                src: '<%= config.app %>/*.html'
             },
-            html: '<%= config.app %>/{,*/}*.html'
+            forms: {
+                options: {
+                    dest: '<%= config.dist %>/forms'
+                },
+                src: '<%= config.app %>/forms/*.html'
+            },
+            news: {
+                options: {
+                    dest: '<%= config.dist %>/news'
+                },
+                src: '<%= config.app %>/news/*.html'
+            }
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
