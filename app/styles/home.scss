@@ -16,7 +16,7 @@
 
         .home-tab-col {
             background-color: #eaeaea;
-            background-image: url('../images/tab-gradient.png');
+            background-image: url('../images/home/tab-gradient.png');
             background-repeat: repeat-y;
             background-position: right bottom;
 
@@ -28,7 +28,7 @@
         .home-tab {
             height: 110px;
             background-color: #eaeaea;
-            background-image: url('../images/tab-gradient.png');
+            background-image: url('../images/home/tab-gradient.png');
             background-repeat: no-repeat;
             background-position: right bottom;
             opacity: 0.5;
@@ -92,11 +92,11 @@
         }
 
         .active-tab {
-            background-image: url('../images/tab-gradient-active.png');
+            background-image: url('../images/home/tab-gradient-active.png');
         }
 
         .accordion-tab {
-            background-image: url('../images/tab-gradient-accordion.png');
+            background-image: url('../images/home/tab-gradient-accordion.png');
         }
 
         .active {
