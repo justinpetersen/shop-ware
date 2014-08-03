@@ -37,6 +37,11 @@ h2 {
     }
 }
 
+h3 {
+	font-size: 24;
+	font-weight: 500;
+}
+
 h4 {
 	font-weight: 400;
 }
@@ -71,6 +76,10 @@ a:active {
 }
 
 .btn-primary {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.1;
+
 	background-color: hsl(200, 66%, 26%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2791c2", endColorstr="#16526e");
