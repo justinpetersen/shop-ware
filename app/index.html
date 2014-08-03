@@ -86,8 +86,11 @@
         <div class="container-fluid video-image-container visible-xs">
             <a href="http://player.vimeo.com/external/102177333.mobile.mp4?s=a2609b0e2b0a2ca69f93b541813b10e6">
                 <img class="video-image" src="images/video-image.jpg" alt="Shop-Ware introduction video">
-                <button type="button" class="btn btn-primary video-button absolute-center"><span class="glyphicon glyphicon-play"></span></button>
             </a>
+            <form class="form-inline" role="form" action="http://player.vimeo.com/external/102177333.mobile.mp4" method="get">
+                <input type="hidden" name="s" value="a2609b0e2b0a2ca69f93b541813b10e6" />
+                <button type="submit" class="btn btn-primary video-button absolute-center"><span class="glyphicon glyphicon-play"></span></button>
+            </form>
         </div>
         <div class="container-fluid header-bottom header-rel">
             <div class="container">
