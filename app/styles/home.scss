@@ -111,9 +111,8 @@
             }
 
             .home-tab-slide {
+                display: none;
                 position: absolute;
-                opacity: 0;
-                transition: opacity 0.4s;
                 height: 510px;
 
                 @media (min-width: 768px) {
@@ -212,7 +211,7 @@
             }
 
             .active {
-                opacity: 1;
+                display: inline;
             }
         }
     }

@@ -25,6 +25,18 @@ TabGroup.prototype.init = function() {
 	this.initNextArrows();
 };
 
+TabGroup.prototype.initAccordion = function() {
+	var that = this;
+	$('.home-tab').each(function(index) {
+		that.cloneTab($(this), index);
+	});
+	$('.home-tab-slide').each(function(index) {
+		that.cloneTabSlide($(this), index);
+	});
+
+	this.initScrollOnCollapse();
+};
+
 TabGroup.prototype.initTabs = function() {
 	var that = this;
 	$('.home-tab.desktop').each(function(index) {
@@ -70,24 +82,12 @@ TabGroup.prototype.setActiveTab = function(activeIndex, device) {
 	if (device === 'desktop') {
 		$('.home-tab-slide.desktop').each(function(index) {
 			if (index === activeIndex) {
-				$(this).addClass('active');
+				$(this).fadeIn();
 			} else {
-				$(this).removeClass('active');
+				$(this).fadeOut();
 			}
 		});
 	}
-};
-
-TabGroup.prototype.initAccordion = function() {
-	var that = this;
-	$('.home-tab').each(function(index) {
-		that.cloneTab($(this), index);
-	});
-	$('.home-tab-slide').each(function(index) {
-		that.cloneTabSlide($(this), index);
-	});
-
-	this.initScrollOnCollapse();
 };
 
 TabGroup.prototype.initScrollOnCollapse = function() {
