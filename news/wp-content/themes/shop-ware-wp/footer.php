@@ -9,7 +9,7 @@
                 <div class=row>
                     <div class="col-xs-12 col-sm-7 col-md-8"></div>
                     <div class="col-xs-12 col-sm-5 col-md-4 news-sidebar-image">
-                        <img src=/images/8048ea50.wrench-icon.png width=43 height=159>
+                        <img src=/images/8048ea50.wrench-icon.png alt="" width=43 height=159>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 footer-right-col">
-                        <p class=footer-text-legal>&copy; SHOP-WARE 2014 | <a href=/privacy.html>PRIVACY POLICY</a></p>
+                        <p class=footer-text-legal>&copy; SHOP-WARE 2014 | <a href=../privacy.html>PRIVACY POLICY</a></p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
         </div>
 
 
-        <script src=/scripts/4776dee8.vendor.js></script>
+        <script src=/scripts/4ad9bc54.vendor.js></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -49,4 +49,5 @@
 
         <script src=/scripts/9d2f4f51.plugins.js></script>
 
-        <script src=/scripts/01cb349e.news-main.js></script>
+        <script src=/scripts/d41d8cd9.news-main.js></script>
+
