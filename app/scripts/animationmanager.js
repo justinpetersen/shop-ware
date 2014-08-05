@@ -11,7 +11,7 @@ var AnimationManager = function() {
 		},
 		{
 			heading: 'Decode VINs',
-			subheading: 'with up to 37 vehicle attributes'
+			subheading: 'up to 37 vehicle attributes'
 		},
 		{
 			heading: 'Works Anywhere',
