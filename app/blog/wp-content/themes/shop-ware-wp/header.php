@@ -3,11 +3,12 @@
     <head>
         <meta charset=utf-8>
         <title><?php wp_title( '|', true, 'left' ); ?></title>
-        <meta name=description content="">
+        <meta name=description content="Join the conversation about innovative shop technology.">
+        <meta name=keywords content="auto, repair, automotive, automobile, shop, garage, wrench, technician, mechanic, checklist, inspection form, template, vitals, paperless, paper free, green, electronic, web, web based, online, clear, communication, customer relations management, CRM, tablet, mobile, smart, phone, smartphone, desktop, android, apple, iOS, cloud, browser, ASA, repairpal, iATN, ratchet+wrench">
         <meta name=viewport content="width=device-width">
         <link rel="shortcut icon" href=/ee07b75f.favicon.ico>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel=stylesheet href=/styles/54b7138b.main.css>
+        <link rel=stylesheet href=/styles/50120bfe.main.css>
         <?php wp_head(); ?>
     
     <body>
@@ -32,7 +33,7 @@
                             <li class=visible-xs><a href=/index.html>HOME</a></li>
                             <li><a href=/pricing.html>PRICING</a></li>
                             <li><a href=/about.html>ABOUT</a></li>
-                            <li class=active><a href="/news/">NEWS</a></li>
+                            <li class=active><a href="/blog/">BLOG</a></li>
                             <li class=hidden-xs><div class=divider>|</div></li>
                             <li><a href=https://app.shop-ware.com/login>LOGIN</a></li>
                         </ul>
@@ -50,20 +51,16 @@
         <div class="container-fluid header-top">
             <div class=container>
                 <div class=row>
-                    <div class="col-xs-12 col-sm-6 col-md-8">
-                        <div class="logo-container visible-xs">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="logo-container logo-container visible-xs">
                             <a href=/index.html><img src=/images/cac2b2e1.shop-ware-logo-sm.png alt=Shop-Ware width=110 height=50></a>
                         </div>
                         <div class="logo-container hidden-xs">
                             <a href=/index.html><img src=/images/cac2b2e1.shop-ware-logo-sm.png alt=Shop-Ware width=220 height=101></a>
                         </div>
+                        <h2 class=header-heading>Tips, News, and Talk</h2>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="header-copy header-copy-news">
-                            <h2 class=header-home-heading>Meet the online tool for auto repair shops.</h2>
-                            <h5 class=header-body-copy>A simple way to document your work and share with your customers.</h5>
-                        </div>
-                    </div>
+                    <div class="col-xs-12 col-md-6 hidden-xs hidden-sm">&nbsp;</div>
                 </div>
             </div>
         </div>

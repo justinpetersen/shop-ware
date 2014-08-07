@@ -25,7 +25,8 @@
                 }
 
                 @media (min-width: 1200px) {
-                    width: 342px;
+                    margin-right: 130px;
+                    width: 322px;
                 }
 
                 .header-quote-heading {
@@ -46,7 +47,7 @@
         .about-header-right-col {
             background: #283339 url('../images/about/about-image.jpg') no-repeat right bottom;
             background-size: cover;
-            height: 200px;
+            height: 280px;
 
             @media (min-width: 768px) {
                 height: 315px;

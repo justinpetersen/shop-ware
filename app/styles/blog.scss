@@ -99,17 +99,44 @@
             }
         }
 
+        .entry-footer {
+            display: none;
+        }
+
         .comments {
             margin-top: 40px;
+            color: #666;
 
             li {
                 list-style-type: none;
                 margin-top: 20px;
+
+                cite {
+                    font-style: normal;
+                    font-weight: 600;
+                }
+
+                .comment-meta {
+                    a {
+                        pointer-events: none;
+                        cursor: default;
+                        color: #aaa;
+                        font-style: italic;
+                    }
+
+                    a.comment-edit-link {
+                        pointer-events: initial;
+                        cursor: initial;
+                        color: #4b8aa6;
+                        font-style: normal;
+                    }
+                }
             }
         }
 
         .comment-respond {
             margin-top: 40px;
+            color: #666;
 
             .comment-notes {
                 margin-top: 20px;
@@ -124,11 +151,13 @@
 
                 #comment {
                     display: block;
+                    width: 100%;
+                    max-width: 530px;
                 }
             }
 
             .form-allowed-tags {
-                font-size: 13px;
+                display: none;
             }
 
             #submit {
@@ -179,6 +208,7 @@
         .footer {
             background: none;
             margin-top: 40px;
+            margin-bottom: 40px;
         }
     }
 }
