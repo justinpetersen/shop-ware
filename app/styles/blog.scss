@@ -77,10 +77,6 @@
                 max-width: 100%;
                 height: auto;
                 margin: 20px;
-
-                @media (min-width: 992px) {
-                    margin: 40px;
-                }
             }
 
             .alignnone {
@@ -100,7 +96,11 @@
         }
 
         .entry-footer {
-            display: none;
+            margin-top: 40px;
+        }
+
+        #disqus_thread {
+            margin-top: 20px;
         }
 
         .comments {
